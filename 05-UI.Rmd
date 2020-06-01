@@ -1,0 +1,13 @@
+# Unemployment Insurance
+
+How have changes in eligibility rules for unemployment insurance (UI) affected how likely workers, unemployed because of COVID-19, get and keep UI benefits?
+
+In the US, there isn't just one set of UI eligibility rules. There are 53 --- one for each State, plus the District of Columbia, Puerto Rico, and the Virgin Islands. But those rules, though they vary somewhat by State, are similar, because to get certain tax advantages, the US Department of Labor has to approve each State's UI rules as meeting some basic UI conditions.
+
+Typically, an applicant for UI must leap over several eligibility hurdles to receive benefits. First, you typically need to have earned a minimum amount from work during a year-long period prior to his or her UI application. Second, you must have left your prior job involuntarily ("involuntary separation"). That means that States can deny benefits for (1) voluntarily quitting without a good enough reason ("good cause"); (2) discharge due to job-related misconduct, (3) unemployment because of a labor dispute, and (4) your fraud to get or increase benefits [@DOL219, chap. 5].  
+
+Once someone gets UI benefits, they've got to do some things to keep getting those benefits. For US DOL to certify a State's UI program, that State's UI law must at least require that, "for regular compensation for any week, a claimant must be able to work, available to work, and actively seeking work." 42 U.S.C. 503(a)(12). Second, if you get UI, you typically can't refuse an offer of "suitable" work without "good cause".
+
+As COVID-19 hit the US and spread, State governors or agencies began relaxing or suspending some UI eligibility rules for COVID-19-related UI claims -- about 25 [?] States had done this by end of March 2020 [@Xie2020, appendix]. Congress and the DOL set forth ways that States could change their UI rules for COVID-19 without losing their DOL approval of their UI system. For example, DOL suggested that States treat a person as quitting for "good cause" if they leave work "due to reasonable risk of exposure or infection (i.e., self-quarantine) or to care for a family member affected by the virus." [@DOL2020, p. 8]  Congress, in the CARES Act and elsewhere, wrote eligibility rules for its new special categories of UI (including pandemic unemployment assistance, or "PUA") on top of, or as exceptions to, State UI eligibility rules.
+
+The result: A complex web of eligibility rules between workers and UI monetary benefits. This chapter parses some of these COVID-19 eligibility rules for different kinds of workers in various States.
