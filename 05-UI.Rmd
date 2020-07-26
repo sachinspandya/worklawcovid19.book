@@ -1,13 +1,53 @@
 # Unemployment Insurance
 
-How have changes in eligibility rules for unemployment insurance (UI) affected how likely workers, unemployed because of COVID-19, get and keep UI benefits?
+How have changes in the law of unemployment insurance (UI) affected how likely workers, unemployed because of COVID-19, get and keep UI benefits?
 
-In the US, there isn't just one set of UI eligibility rules. There are 53 --- one for each State, plus the District of Columbia, Puerto Rico, and the Virgin Islands. But those rules, though they vary somewhat by State, are similar, because to get certain tax advantages, the US Department of Labor has to approve each State's UI rules as meeting some basic UI conditions.
+In the US, there are 53 sets of UI eligibility rules--- one for each State, plus the District of Columbia, Puerto Rico, and the Virgin Islands. At the same time, State UI systems are similar in many ways, in part because to get certain tax advantages, the US Department of Labor (DOL) must certify that each State's UI system meets some basic UI conditions set by federal law. See [42 U.S.C. $\S$ 503](https://www.govinfo.gov/content/pkg/USCODE-2018-title42/html/USCODE-2018-title42-chap7-subchapIII-sec503.htm); [20 C.F.R. $\S$ 604.1 - 604.6](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=f6d24b9ec09459c3e1487411a97e871f&mc=true&r=PART&n=pt20.3.604).
 
-Typically, an applicant for UI must leap over several eligibility hurdles to receive benefits. First, you typically need to have earned a minimum amount from work during a year-long period prior to his or her UI application. Second, you must have left your prior job involuntarily ("involuntary separation"). That means that States can deny benefits for (1) voluntarily quitting without a good enough reason ("good cause"); (2) discharge due to job-related misconduct, (3) unemployment because of a labor dispute, and (4) your fraud to get or increase benefits [@DOL219, chap. 5].  
+Typically, an applicant for UI must leap over several eligibility hurdles to receive benefits. You typically need to have earned a minimum amount from work during a year-long period prior to his or her UI application. And you must have left your prior job involuntarily ("involuntary separation"). That means that States can deny benefits for (1) voluntarily quitting without a good enough reason ("good cause"); (2) discharge due to job-related misconduct, (3) unemployment because of a labor dispute, and (4) your fraud to get or increase benefits [@DOL219, chap. 5].  
 
-Once someone gets UI benefits, they've got to do some things to keep getting those benefits. For US DOL to certify a State's UI program, that State's UI law must at least require that, "for regular compensation for any week, a claimant must be able to work, available to work, and actively seeking work." 42 U.S.C. 503(a)(12). Second, if you get UI, you typically can't refuse an offer of "suitable" work without "good cause".
+Then, once you start getting UI benefits, you've got to do some things to keep on getting them. For DOL to certify a State's UI program, that State's UI law must at least require that, "for regular compensation for any week, a claimant must be able to work, available to work, and actively seeking work." 42 U.S.C. $\S$ 503(a)(12). What counted as "able", "available", and "actively seeking" could vary. For example, a State may take an individual as "available" to work if that individual is "on temporary lay-off and is available to work only for the employer that has temporarily laid-off the individual." [20 CFR § 604.5(a)(3)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=f6d24b9ec09459c3e1487411a97e871f&mc=true&r=PART&n=pt20.3.604#se20.3.604_15). Second, if you get UI, you typically can't refuse an offer of "suitable" work without "good cause".  What counted as "suitable" could vary by State, too.
 
-As COVID-19 hit the US and spread, State governors or agencies began relaxing or suspending some UI eligibility rules for COVID-19-related UI claims -- about 25 [?] States had done this by end of March 2020 [@Xie2020, appendix]. Congress and the DOL set forth ways that States could change their UI rules for COVID-19 without losing their DOL approval of their UI system. For example, DOL suggested that States treat a person as quitting for "good cause" if they leave work "due to reasonable risk of exposure or infection (i.e., self-quarantine) or to care for a family member affected by the virus." [@DOL2020, p. 8]  Congress, in the CARES Act and elsewhere, wrote eligibility rules for its new special categories of UI (including pandemic unemployment assistance, or "PUA") on top of, or as exceptions to, State UI eligibility rules.
+As COVID-19 hit the US and spread, and more workers became unemployed as a result, UI claimants faced this problem: How can unemployed workers meet these "available" and "actively seeking" requirements in a pandemic? And, particularly for workers in "essential businesses" exempt from stay-at-home orders, what if those workers, though asymptomatic, wanted to quit to self-isolate or care for a family member with symptoms? 
+
+Then, when Congress in the CARES Act and elsewhere provided for additional UI payments (including the CARES Act's pandemic unemployment assistance, or "PUA"), Congress wrote it own eligibility rules that would apply on top of, or as exceptions to, State UI eligibility rules.
+
+```{r UI_timeline}
+
+library(timevis)
+
+timeline_data <- data.frame(
+  id      = 1:4,
+  content = c("Families First Act", "CARES Act", "Paycheck Protection Program Act"),
+  start   = c("2020-03-18", "2020-03-27", "2016-04-24"),
+  end     = c(NA, NA, NA)
+)
+
+timevis(timeline_data)
+
+```
 
 The result: A complex web of eligibility rules between workers and UI monetary benefits. This chapter parses some of these COVID-19 eligibility rules for different kinds of workers in various States.
+
+## State UI
+
+As part of the early response, State governors or agencies began relaxing or suspending some UI eligibility rules for COVID-19-related UI claims -- about half the States had done this by end of March 2020 [@Xie2020, appendix]. Some tracked an early DOL suggestion that States treat a person as quitting for "good cause" if they leave work "due to reasonable risk of exposure or infection (i.e., self-quarantine) or to care for a family member affected by the virus." [@DOL2020, p. 8] For example, Ohio's governor declared that, under Ohio UI law, a UI applicant is unemployed and not required to "actively seek" work if the applicant is "requested by a medical professional, local health authority, or employer to be isolated or quarantined as a consequence of COVID-19 even if not actually diagnosed with COV-19," except where the worker has "access to leave benefits from their employer(s)." [Ohio E.O. 2020-03D](https://governor.ohio.gov/wps/portal/gov/governor/media/executive-orders/executive-order-2020-03-d). 
+
+Congress also pushed States to relax some UI rules. In mid-March 2020, Congress passed the Families First Coronavirus Response Act.  As part of that Act, Congress told DOL that, for purposes of applying its regular UI certification requirements, the DOL "shall" disregard any State modifications of UI "law and policies with respect to work search, waiting week, good cause, or employer experience rating on an emergency temporary basis as needed to respond to the spread of COVID-19." Act § 4102(b). Thereafter, DOL issued a guidance on what temporary measures States might adopt accordingly. For example, DOL suggested that States modify their UI requirement that any voluntary quits must be for "good cause" to allow workers to leave work "due to reasonable risk of exposure or infection (i.e., self-quarantine) or to care for a family member affected by the virus."[@DOL2020, p. 8].
+
+## The CARES Act and Pandemic Unemployment Assistance 
+
+Thanks to the CARES Act, certain workers got Pandemic Unempoyment Assistance (PUA) --  an additional $600 per week for weeks of unemployment ending on or before July 31, 2020, on top of what they could get in State UI.  To get PUA, workers had to _self-certify_ that they were "otherwise able to work and available for work" under their State's UI law, but they were "unemployed, partially unemployed, or unable or unavailable to work," CARES Act § 2102(a)(3)(A)(ii)(I), because of one of several qualifying conditions.
+
+Such qualifying conditions included that the individual is caring for a family or household member diagnosed with COVID-19, or primarily cares for a child who can't attend school because of COVID-19 and such school is required for the individual to work. See CARES Act § 2102(a)(3)(A)(ii)(I)(aa)-(hh). Other qualifying conditions included:
+
+(ii) the individual has to quit his or her job as a direct result of COVID-19;
+(jj) the individual's place of employment is closed as a direct result of the COVID-19 public health emergency; or
+(kk) the individual meets any additional criteria established by the Secretary for unemployment assistance under this section.
+
+Id. § 2102(a)(3)(A)(ii)(I). Workers were ineligible for PUA if they "telework with pay" or are receiving "paid sick leave or other paid leave benefits." CARES Act § 2102(3)(B).
+
+By July 2020, the flat $600 PUA amount -- set to expire on July 31 -- was still politically controversial. Some politicians complained that the $600 amount was too large, because it led to a total weekly UI benefit that exceeded wage replacement, i.e., what what they would have received in wages had they gone back to work. Subsequent research, however, found little evidence that high UI amounts affected return to work [@Bartik2020]. 
+
+In any case, Congress appears to have settled on the flat $600 amount in the CARES Act, rather than making the PUA a function of a claimant's total weekly UI payment that did not exceed 100% wage replacement. The reason: it is harder for States to rewrite the software of their antiquated UI claims processing computer systems to implement a PUA that varied by prior claimant wages as compared to a flat amount. [https://news.bloomberglaw.com/daily-labor-report/dol-asks-states-to-detail-heavy-lifts-of-jobless-aid-redesigns].
+

@@ -1,0 +1,97 @@
+# Undocumented Workers
+
+In the US, undocumented workers face special challenges under the law because of their immigration status. How did undocumented workers fare differently because of COVID-19? And how did governments and employers respond (or not) to address the distinctive issues faced by those undocumented workers?
+
+## Background
+
+Some worker protections and social insurance mechanisms disadvantage workers because they are undocumented. For example, to be federally-certified, a State's unemployment insurance law must provide that to be "available to work" (a showing necessary for benefit eligibility), a UI claimant must, if a non-citizen, be legally authorized to work in the United States. See [20 CFR § 604.5(f)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=f6d24b9ec09459c3e1487411a97e871f&mc=true&r=PART&n=pt20.3.604#se20.3.604_15).
+
+More important is a 1996 federal statute, the Personal Responsibility and Work Opportunity Reconciliation Act, Pub. L. No. 103-193, 110 Stat. 2105 (1996) (PRWORA).  Although PRWORA mostly focused on welfare benefits, Title VI of that Act included restrictions on non-citizen access to such benefits, nominally to discouarge "illegal immigration" and encourage non-citizens to be "self-reliant". 8 U.S.C. 1601(5),(6).
+
+One such PRWORA restriction declared that most kinds of non-citizens (including the undocumented) are "not eligible" for "any State or local public benefit," [8 U.S.C. § 1621(a)](https://www.govinfo.gov/content/pkg/USCODE-2018-title8/html/USCODE-2018-title8-chap14-subchapII-sec1621.htm), defined to include, among other things, any "professional license, or commercial license provided by an agency of a State or local government," _id._ § 1621(c)(1)(A), any "unemployment benefit," id. § 1621(c)(1)(B), as well as a catch-all provision: "any other similar benefit for which payments or assistance are provided to an individual, household, or family eligibility unit by an agency of a State or local government or by appropriated funds of a State or local government," id. (Exceptions include "[s]hort-term, non-cash, in-kind emergency disaster relief," id. § 1621(b)(2), and an exception that would cover public health assistance for testing and treatment for COVID-19, see id. § 1621(b)(3).)
+
+At the same time, if you apply for a "State or local public benefit", section 1621 doesn't say that you must prove that section 1621(a) doesn't block your eligibility for that benefit. States and local governments may themselves require such proof, if they choose. 8 USC 1625. "For purposes of this chapter, eligibility relates only to the general issue of eligibility or ineligibility on the basis of alienage.” 8 U.S.C. § 1643(a)(1)
+
+Moreover, Congress left States a way to opt-out: 
+
+>A State may provide that an alien who is not lawfully present in the United States is eligible for any State or local public benefit for which such alien would otherwise be ineligible under subsection (a) only through the enactment of a State law after August 22, 1996, which affirmatively provides for such eligibility.
+
+8 U.S.C. § 1621(d). On what counts as an "enactment" and who gets to decide how State opts out, see @Ayers2018.
+
+Since 1996, some State legislatures have passed laws to trigger the section 1621(d) opt-out for work licenses. E.g., Cal. Bus. & Prof. Code § 135.5; 20 Ill. Comp. Stat. 2105/2105-140. Some of those laws, however, cover only particular occupations or subsets of undocumented workers, such as DACA recipients. E.g., Fla Stat. § 451.021(3); Ind. Code § 12-32-1-6.5(c); Neb. Rev. St. § 4-111. For compilations, see, e.g., [Olivas (2017)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2997713).
+
+All this meant that, when COVID-19 hit, federal law made undocumented workers in most States ineligible for State unemployment insurance and other State and local public benefits covered by the 1996 Act. 
+
+## the CARES Act and Social Security numbers
+
+Moreover, although Congress provided for additional pandemic unemployment assistance (PUA), it required that [insert SSN], not an Individual Taxpayer Identification Number (ITIN) --- issued by the IRS to those who aren't eligible for an SSN. 26 U.S.C. § 6109; 26 C.F.R. § 301.6109-1. This effectively excluded undocumented workers, because they are ineligible for an SSN.
+
+The CARES Act also excluded from cash payments ($1,200 max per adult and $500 max for each of the adult’s children under age 17) anyone filing jointly with an ITIN filer, even a U.S. citizen or green-card holder with an SSN. Thus, if one family member files using an ITIN, all family members are ineligible. There is an exception for military families. Lawsuit challenging this exclusion: R.V. v. Munuchin, No. 8:20-cv-01148 (D. Maryland, filed May 5, 2020), arguing that this feature of the CARES Act illegally discriminated against the US citizen children of undocumented parents. (On June 19, 2020, the district court denied the Government's motion to dismiss.)
+
+## Disaster relief funds
+
+In response, some NGOs worked with private philanthorpy to create COVID-19 relief funds for anyone not eligible for another type of federal or State aid -- including, but limited to, undocumented, workers. Examples included Minneapolis 
+
+ So long as those NGO funds didn't contain "appropriated funds of a State or local government," 8 USC § 1621(c)(1)(B), the 1996 federal statute (PRWORA) didn't apply. To be sure, where the NGO funds didn't ask claimants about their immigration status, there would no proof that the State or local appropriated funds had gone to undocumented workers in violation of the PRWORA restriction.
+
+In few places, however, a State or local government committed itself to funding cash payments to undocumented worker suffering because of COVID-19.
+
+### California
+
+California moved first and targeted undocumented adults specifically.  On April 15, 2020, California Governor Newsom announced the Disaster Relief Assistance for Immigrants project. California would provide up to $75 million in one-time cash disaster relief benefits ($500 for an undocumented adult, $1000 maximum in aid per household) to undocumented Californians, if they showed that had suffered hardship because of COVID-19 and didn't qualify for federal COVID-19 aid. [cite]. The funds consisted of two parts: $16.5 million from the State's Rapid Response Program, adopted in June 2019, and $63.3 million from the appropriation made in section 36 of the Budget Act of 2019 (passed March 17, 2020).
+
+Did this relief fund violate the federal statute in 8 U.S.C. § 1621 that bars "State and local public benefits" to undocumented people?  In two lawsuits (filed on behalf of taxpayer plaintiffs by politically conservative NGOs: the Center for American Liberty and Judicial Watch), the plaintiffs argued that it did. See Crest v. Newsom, No. 20STCV16321 (Cal. Superior Court, L.A. County, complaint filed April 29, 2019); Benitez v. Newsom, [cite] (Calif. Sup. Ct., emergency petition filed April 22, 2020).
+
+In response to the *Benitez* petition, California's Attorney General argued that California had already done enough to have opted out under 8 U.S.C. § 1621(d).  Thus, although California law already makes undocumented persons ineligible for UI benefits, see [Cal. Unemp. Ins. Code 1264(a)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1264&lawCode=UIC), this was disaster relief, not UI, and the Legisature had already declared that its Rapid Response Program was "a state law that provides assistance and services for undocumented persons within the meaning of [8 U.S.C. § 1621(d)]," [Cal. Welfare & Inst. Code 13403](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13403&lawCode=WIC).
+
+What about the other $63.3 million, which came from a seperate legislative appropriation enacted on March 17, 2020, _not_ directly from the Rapid Response Program?  There, the AG argued that, in that March 2020 legislation, the Legislature had authorized the Director of California's Department of Finance to allocate those funds to any item for any purpose related to Governor Newsom’s emergency proclamation. (Stats. 2019, ch. 27, § 2.) About a month later, that Director expressly allocated an additional $63.3 million to the Department of Social Services to fund the emergency relief fund for undocumented persons. Accordingly, the AG concluded, that was enough to satisfy 8 U.S.C. § 1621(d)'s opt-out provision, which after all did not require a state law to expressly refer to section 1621(d) itself. Besides, when it enacted 8 U.S.C. § 1621(d), Congress didn't intend that a State, once it opted out with respect to a State or local benefit, had to do it again every time it appropriated funding for that benefit.
+
+The fund's application window opened on May 18, 2020 and closed on June 30, 2020. By July 1, 2020, the fund had received 150,000 applications for benefits; approved 104,830 of them (about 70%); and disbursed about \$43 million Statewide. <https://www.cdss.ca.gov/Portals/9/Immigration/COVID/DRAI-Allocations-63020.pdf> The lawsuits in *Benitez* and *Crest* are still pending resolution.
+
+### Oregon
+
+On April 23, 2020, Oregon's Joint Emergency Board -- a legislative committee that can allocate state funds from a special Emergency Fund when the Legislature is not in session -- voted to allocate $10 million as
+
+>a grant to the Oregon Community Foundation to oversee a culturally-specific community based grant program to make payments to workers who are ineligible for wage replacement payments from traditional unemployment insurance programs.
+
+https://www.oregonlegislature.gov/lfo/eboard/EB%20Certificate%2004-23-2020.pdf.
+
+That program, the [Oregon Worker Relief Fund](https://workerrelief.org/about/), had been created in early April by several NGOs to, as one NGO's director put it, address "the immediate need of getting money in the hands of immigrant workers who've been laid off" because of COVID-19.
+https://www.portlandmercury.com/blogtown/2020/04/09/28259142/immigrant-rights-groups-call-for-unemployment-support-for-undocumented-oregonians 
+By May 29, the Fund had disbursed $750,000 in aid. https://www.heraldandnews.com/news/local_news/oregon-worker-relief-fund-distributes-750-000-in-aid-to-immigrant-oregonians/article_69846fab-2891-5965-bf0b-45e2c3eaa3fe.html
+
+eligibility criteria: "must be undocumented immigrant": https://workerrelief.org/find-a-navigator/
+ 
+
+had by then had garnered nearly $1.5 million in donations, including a $250,000 donation from the city of Portland <https://www.portlandoregon.gov/cbo/article/759912>.  In a memo, dated April 20, 2020, the Director of Portland's Office of Community & Civic Life had recommended the $250,000 donation to the Fund on the ground that the Fund was led by a coalition of NGOs "to get dollars in the
+hands of Oregon workers who are being left out of the Federal Stimulus package due to their immigration status. . . . The City’s early commitment to the fund would help generate momentum for additional public sector contributions." Memo, p. 10.  
+
+
+### Connecticut
+
+In June 2020, Connecticut Governor Lamont announced in a press release that the State would contract with NGOs to provide assistance to any Connecticut resident who is undocumented, "any U.S. citizen who files taxes with an undocumented spouse or partner," as well as US citizen children of undocumented parents. This assistance: $2.5 million in State-provided rental assistance "to those who are ineligible for similar aid by the CARES Act." According to a press report, the State rental assistance would go directly to the landlords of undocumented tenants who had fallen behind on rent. <https://ctmirror.org/2020/06/03/connecticut-provides-coronavirus-assistance-for-undocumented/>
+
+The program has yet to be implemented.
+
+
+## Localities
+
+At least seven localities—Austin, Chicago, 
+
+
+Minneapolis : https://minnesotareformer.com/briefs/minneapolis-creates-5-million-covid-19-relief-fund-available-to-undocumented-residents/?fbclid=IwAR1H7uC2DjwVTeuGpd-2_6uP-HUrvzHmm1L5ZFn_IjlZ5PJNJy7Fa6My76E
+
+
+Seattle (with King County, Washington), St. Paul, and Washington, DC, along with Montgomery County, Maryland
+
+date, 2020-06-22, Chicago Resiliency Fund, IL, https://resurrectionproject.org/chicagofund/
+
+The City of Chicago in collaboration with Open Society Foundations and The Resurrection Project (TRP) is launching the fund on June 22nd. The fund will provide $1,000 per household for eligible Chicagoans, which includes, but is not limited to, undocumented individuals, mixed-status families, dependent adults and returning residents.
+
+Chicago received $1 million from the Open Society Foundations, which was the second-largest single donation from the organization for these efforts.
+
+
+3. impact of public-charge rule
+
+
+ 

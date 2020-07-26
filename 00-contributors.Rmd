@@ -1,6 +1,28 @@
 # About the Contributors {-}
 
-Sachin S. Pandya is a law professor at the University of Connecticut.
+Matthew Bodie ([`r icon::ai("orcid")`](https://orcid.org/0000-0001-9133-7685)) is the Callis Family Professor of Law at St. Louis University.
 
-Jeff Hirsch is a law professor at the University of North Carolina.
+Elizabeth Brown is an Associate Professor, Law, Taxation, and Financial Planning, at Bentley University.
+
+Michael C. Duff is Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
+
+Jeffrey M. Hirsch is the Geneva Yeargan Rand Distinguished Professor of Law at the University of North Carolina.
+
+Anthony Forsyth ([`r icon::ai("orcid")`](https://orcid.org/0000-0003-0790-8524)) is a Professor in the Graduate School of Business and Law at RMIT University, Australia.
+
+Ann C. Juliano is a Professor of Law at Villanova University.
+
+Sachin S. Pandya ([`r icon::ai("orcid")`](http://orcid.org/0000-0001-7387-1307) [`r icon::fa("twitter")`](https://twitter.com/sachinspandya) [`r icon::fa("paper-plane")`](mailto:sachin.pandya@uconn.edu)) is a Professor of Law at the University of Connecticut.
+
+Elizabeth Pendo is the Joseph J. Simeone Professor of Law at St. Louis University.
+
+Diana Reddy is a [graduate student](https://www.dsreddy.com/) in the Jurisprudence and Social Policy Program, University of California, Berkeley.
+
+Elizabeth Tippett is Associate Professor of Law at the [University of Oregon](https://law.uoregon.edu/people/faculty/tippett).
+
+Deborah Widiss ([`r icon::ai("google-scholar")`](https://scholar.google.com/citations?user=lp6kuV0AAAAJ&hl=en)) is a Professor of Law at Indiana University.
+
+Jamillah Bowman Williams is an Associate Professor of Law at [Georgetown University](https://www.law.georgetown.edu/faculty/jamillah-bowman-williams/).
+
+Ruqaiijah Yearby ([`r icon::ai("orcid")`](https://orcid.org/0000-0002-2381-9401)) is a Professor of Law at St. Louis University.
 

@@ -1,0 +1,11 @@
+# Safety
+
+Here is a review of existing methods.
+
+```{r test}
+
+url <- "https://infogram.com/meat-packing-and-covid-19-update-1h8n6md0xg0m6xo"
+
+knitr::include_app(url)
+
+```
