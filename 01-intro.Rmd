@@ -1,23 +1,4 @@
 # Introduction {#intro}
 
-The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 2020, it had spread to virtually everywhere on Earth. On March 12, 2020, the World Health Organization declared COVID-19 a global pandemic.
+The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 2020, it had spread to virtually everywhere on Earth. On March 11, 2020, the World Health Organization declared COVID-19 a pandemic.[@WHO2020] By that point, COVID-19 had hit the United States.  When it did, it shocked the system of workplace and labor market regulation in the United States. Unemployment skyrocketed. Workplaces became sites of infection risk and, in some cases, protest and litigation about that risk.
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
-
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
-
-```{r nice-fig1, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center', eval=FALSE}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
-
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-```{r nice-tab1, eval=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
