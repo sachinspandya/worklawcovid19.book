@@ -1,0 +1,21 @@
+# Workers Compensation
+
+Table of Workers Compensation Presumptions, derived from @NCIC2020.
+
+```{r wc_presumptions, message-FALSE, warning=FALSE, echo=FALSE}
+
+data_load_path <- here::here("data","wc_presumptions_2020-08-01.csv")
+d <- readr::read_csv(data_load_path)
+d$source <- paste0("<a href='",d$source_url,"'target='_blank'>",d$source,"</a>")
+
+library(dplyr)
+
+d2 <- d %>%
+  select(state, source, date, type, workers_covered, date_expired)
+
+library(DT)
+
+datatable(d2, escape=FALSE) %>% 
+      formatStyle(columns = 1:5, `font-size` = '11px')
+
+```
