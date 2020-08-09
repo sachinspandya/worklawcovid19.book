@@ -1,11 +1,46 @@
 # Safety
 
-Here is a review of existing methods.
+## Background
 
-```{r test}
+COVID-19 has highlighted the ways that law in the U.S. protects worker health and safety, as well as the gap between that law on paper and in action.
 
-url <- "https://infogram.com/meat-packing-and-covid-19-update-1h8n6md0xg0m6xo"
+### Federal Law
 
-knitr::include_app(url)
+On paper, the Occupational Safety and Health Act of 1970 provides for worker health and safety in two main ways.  First, its so-called general-duty clause requires each employer to "furnish to each of his employees employment and a place of employment which are free from recognized hazards that are causing or are likely to cause death or serious physical harm to his employees." [29 U.S.C. § 654(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec654.htm). 
 
-```
+Second, the OSH Act requires employers to "comply with occupational safety and health standards promulgated under this Act." Id. 654(a)(2). To date, however, there is no such standard for airborne infectous diseases. OSHA had been working on a new standard for airborne infectious disease to protect workers in hospitals and nursing homes, but in 2017 the Trump Administration removed that standard from the regulatory agenda.[@Mann2020] There are OSHA standards for using personal protective equipment (PPE) for protecting the eyes, face, lungs, and hands, see 29 C.F.R. §§ 1910.133, 1910.134, 1910.138, that might apply where workers need PPE to protect against COVID-19 exposure.
+
+There is no private right to sue employers under the OSH Act. Instead, the Occupational Health and Safety Agency (OHSA) is the exclusive enforcer of the OSH Act's general-duty clause and of work safety standards issued under that Act, by way of inspections and civil penalties. 
+
+In April 2020, OSHA told its regional adminstrators that, because of COVID-related business closures, travel and group-size limits, and other restrictions, safety inspectors should judge whether an employer "made good faith efforts to comply with applicable OSHA standards" and if compliance wasn't possible, "to ensure that employees were not exposed to hazards from tasks, processes, or equipment for which they were not prepared or trained."[OSHA_mem_april2020](https://www.osha.gov/memos/2020-04-16/discretion-enforcement-when-considering-employers-good-faith-efforts-during). 
+
+From Febuary through August 2020, OSHA received about 7,700 COVID-related complaints and about 1,000 COVID-related referrals (mostly from the health care industry); closed about 6,800 cases; but issued only two citations.[@OSHA2020].
+
+### State OSHA
+
+The OSH Act does permit States to enforce work safety under pre-approved plans, including issuing their own safety standards, provided the plan is no less effective as the OSH Act in protecting workers for work-related injuries, illnesses and deaths.  Today, twenty-two states have OSHA approved plans, and six States have approved plans covering only state and local government workers. These States can thereby issue safety standards on their own to cover their State. For example, California's work safety agency (Cal/OSHA) issued a occupational safety standard for protecting against aerosol transmissable diseases in medical and some other workplaces. [Cal. Regs. tit. 8, sec. 5199](https://www.dir.ca.gov/title8/5199.html). In July 2020, Virgnia's workplace safety agency issued an emergency temporary standard for COVID-19 exposure. [§ 16 VAC 25-220](https://www.doli.virginia.gov/wp-content/uploads/2020/07/COVID-19-Emergency-Temporary-Standard-FOR-PUBLIC-DISTRIBUTION-FINAL-7.17.2020.pdf). For details, see @Szymendera2020 [pp. 10-15].
+
+### Emergency Temporary Standards
+
+Although OSHA takes many years to promulgate safety standards, OSHA may also issue an "emergency temporary standard to take immediate effect" when published in the Federal Register if the Secretary determines
+
+>(A) that employees are exposed to grave danger from exposure to substances or agents determined to be toxic or physically harmful or from new hazards, and 
+>(B) that such emergency standard is necessary to protect employees from such danger.
+
+[29 U.S.C. § 655(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec655.htm). OSHA has issued an ETS only rarely and not at all since 1983.[@Szymendera2020, appendix].
+
+Since March 2020, OSHA has refused to adopt an ETS for airborne infectous disease that would cover COVID-19 exposure in the workplace. And while OHSA may be challenged for failing to adopt an ETS, [cite], the U.S. Court of Appeals for the D.C. Circuit -- where denials of such petitions are reviewed -- has thus far refused to order OSHA to issue an ETS:  
+
+> The OSHA’s decision not to issue an ETS is entitled to considerable deference. In light of the unprecedented nature of the COVID-19 pandemic, as well as the regulatory tools that the OSHA has at its disposal to ensure that employers are maintaining hazard-free work environments, see 29 U.S.C. § 654(a), the OSHA reasonably determined that an ETS is not necessary at this time."
+
+In re: AFL-CIO, ____ (D.C. Cir., June 11, 2020)(citation omitted). On similar grounds, that court denied a [petition by the United Mine Workers union to the Mine Safety and Health Administration](https://umwa.org/wp-content/uploads/2020/06/Murphy.pet_.FINAL_.pdf) to use its powers to issue an ETS under the Federal Mine and Safety Act, [30 U.S.C. § 811(b)](https://www.govinfo.gov/content/pkg/USCODE-2018-title30/html/USCODE-2018-title30-chap22-subchapI-sec811.htm). That court held that the agency's finding that an ETS was not yet "necessary" was reasonable. See [In re United Mine Workers, No. 20-1215, (D.C. Cir., July 16, 2020)](https://www.cadc.uscourts.gov/internet/orders.nsf/3587402FD4A1AEEB852585A700513EF3/$file/20-1215LDSD.pdf).
+ 
+In late July 2020, a coalition of unions petitioned the US Department of Transportation for a mandatory mask rule. [Letter for TTD to Chao, dated July 27, 2020](https://ttd.org/wp-content/uploads/2020/07/TTD-Petition-for-Rulemaking-to-DOT-7.27.20-1.pdf). That request is pending.
+
+
+Nevada OSH issues citations re COVID
+https://news.bloomberglaw.com/coronavirus/nevada-osha-takes-lead-enforcing-worker-virus-protections
+
+Farmworkers:
+
+https://www.npr.org/sections/health-shots/2020/08/08/900220260/without-federal-protections-farm-workers-risk-coronavirus-infection-to-harvest-c
