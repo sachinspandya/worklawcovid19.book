@@ -7,29 +7,29 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "A book about how the the COVID-19 pandemic has affected the law of work."
+description: "Essays on how COVID-19 has affected the law of work"
 ---
 
 # Preface {-}
 
-When COVID-19 hit the United States in March 2020, it shocked the system of workplace and labor market regulation in the United States. Unemployment skyrocketed. Workplaces became sites of infection risk and, in some cases, protest and litigation about that risk. This book is a first stab by a group of researchers to expose and explain the ways that COVID-19 has thus far affected work law in the US, both on the books and on the ground. The focus is on the US with a comparative look at few other countries. 
-
-This book, like the virus, is ongoing.  There is no vaccine yet; and political debate and litigation will not stop anytime soon.  There is no settled story about what COVID-19 did to work law, because in the U.S. at least, COVID-19 is far from over.
+This book is a first stab by a group of researchers to expose and explain the ways that COVID-19 has thus far affected work law in the US, both on the books and on the ground. The focus is on the US with a comparative look at few other countries. This book, like the virus, is ongoing. We aim to _update_ the book relatively quickly (as best we can) as events and information change. To that end, feel free to send comments and suggestions to a contribution's author, or to the editors at <mailto: sachin.pandya@uconn>.
 
 
 ```{r include=FALSE} 
 # automatically create a bib database for R packages
 knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'ggplot2', 'gganimate'
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'ggplot2', 'gganimate', 'DT'
 ), 'packages.bib')
+
+
 ```
 
 ## Why read this book {-}
 
-We've published this book for anyone with a reliable Internet connection who wants to know more about COVID-19's effect on workers and work law (in the US and elsewhere) but has neither the training nor the patience to mine the law or traditional legal commentary for insights. Accordingly, the contributions are relatively short, but each one has hyerlinks to cited primary and secondary sources, in case you wnat to dig deeper. The focus is mostly on the United States. For country-level reports on labor law and COVID-19, see @Haar2020. Most importantly, we aim to _update_ these contributions relatively quickly (as best we can) as conditions change or new information emerges. To that end, feel free to send comments and suggestions to a contribution's author or to the editors as <mailto: sachin.pandya@uconn>.
+We've published this book for anyone with a reliable Internet connection who wants to know more about COVID-19's effect on workers and work law (in the US and elsewhere) but has neither the training nor the patience to mine the law or traditional legal commentary for insights. Accordingly, the contributions are relatively short, but each one has hyperlinks to cited primary and secondary sources, in case you wnat to dig deeper. The focus is mostly on the United States. For country-level reports on labor law and COVID-19, see @Haar2020. 
 
 ## Colophon {-}
 
-We published this book with bookdown [@R-bookdown].
+We published this book with bookdown [@R-bookdown], along with ggplot2 [@R-ggplot2] for figures and DT [@R-DT] for tables.
 
 
