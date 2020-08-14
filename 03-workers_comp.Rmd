@@ -1,5 +1,6 @@
 # Workers Compensation
 
+<<<<<<< HEAD
 ## Background
 
 TBA
@@ -10,6 +11,8 @@ TBA
 
 ## Causation
 
+=======
+>>>>>>> 4529cd91a4bb8d4228d8edff47a4b04fd7bb64bf
 Table of Workers Compensation Presumptions, derived from @NCIC2020.
 
 ```{r wc_presumptions, message-FALSE, warning=FALSE, echo=FALSE}
