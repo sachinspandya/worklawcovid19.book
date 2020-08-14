@@ -1,5 +1,15 @@
 # Workers Compensation
 
+## Background
+
+TBA
+
+## Exclusivity
+
+TBA
+
+## Causation
+
 Table of Workers Compensation Presumptions, derived from @NCIC2020.
 
 ```{r wc_presumptions, message-FALSE, warning=FALSE, echo=FALSE}

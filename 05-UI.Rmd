@@ -149,3 +149,51 @@ By July 2020, the flat $600 FPUC amount -- set to expire on July 31 -- was still
 
 On July 31, 2020, the $600 FPUC provision of the CARES Act officially expired, with nothing set up to take its place.
 
+## Presidential Memorandum and Stafford Act "Lost Wage Assistance"
+
+On August 8, 2020, admist stalled negotiations over extending FPUC, President Trump issued a [memorandum](https://www.whitehouse.gov/presidential-actions/memorandum-authorizing-needs-assistance-program-major-disaster-declarations-related-coronavirus-disease-2019/) authorizing the Federal Emergency Management Agency (FEMA) to provide "lost wages assistance" under section 408(e)(2) of the Stafford Act.  Section 408(e) of the Act -- titled "Financial assistance to address other needs" -- provides:
+
+>(1) Medical, dental, child care, and funeral expenses
+The President, in consultation with the Governor of a State, may provide financial assistance under this section to an individual or household in the State who is adversely affected by a major disaster to meet disaster-related medical, dental, child care, and funeral expenses.
+
+>(2) Personal property, transportation, and other expenses
+The President, in consultation with the Governor of a State, may provide financial assistance under this section to an individual or household described in paragraph (1) to address personal property, transportation, and other necessary expenses or serious needs resulting from the major disaster.
+
+[42 U.S.C. 5174(e)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section5174&num=0&edition=prelim). The memorandum appears to rely on the President's statutory authority to provide financial assistance to address "other necessary expenses or serious needs resulting from the major disaster."
+
+The problem: Section 408(e)(2) is _not_ the Stafford Act section that provides for unemployment assistance. Section 410 of the Stafford Act authorizes the President to provide "to any individual unemployed as a result of a major disaster such benefit assistance as he deems appropriate" while that individual is unemployed. That individual, however, can't be "entitled to any other unemployment compensation." And disaster unemployment assistance only lasts "as long as the individual's unemployment caused by the major disaster continues or until the individual is reemployed in a suitable position," but no longer than 26 weeks after the major disaster is declared. Moreover, the amount can't be more than the maximum under the UI law of the State "in which the disaster occurred." 42 U.S.C. § 5177(a). Federal regulations, promulated by the Department of Labor, set forth eligibility requirements for such relief, see 20 C.F.R. § 625.4, including that the "individual is able to work and available for work within the meaning of the applicable State law," id. § 625.4(g). Notably, eligibility does not depend on employee status; it extends to either an unemployed worker or "an unemployed self-employed individual," id. § 625.4(c).
+
+In contrast, FEMA regulations govern "other needs" assistance under section 408(e) of the Stafford Act. 44 C.F.R. §§ 206.119, 206.120. Setting aside applicants with insurance coverage, if any, FEMA may _only_ provide section 408 assistance if the individual applying for such assistance "has incurred a disaster-related necessary expense or serious need in the state in which the disaster has been declared." 44 C.F.R. § 206.113(b)(1); see also 44 C.F.R. § 206.113(b)(10)(FEMA may not provide assistance under this subpart for "any items not otherwise authorized by this section").
+
+42 U.S.C. § 5155(c)("A person receiving Federal assistance for a major disaster or emergency shall be liable to the United States to the extent that such assistance duplicates benefits available to the person for the same purpose from another source."). State of Hawaii ex rel. Atty. Gen. v. FEMA, 294 F.3d 1152, 1159 (9th Cir. 2002) ("'benefits available' is unambiguous in that it cannot refer only to benefits actually received"); See also 44 C.F.R. § 206.116(a) (governing "recovery of funds"); 44 C.F.R. § 206.113(b)(7)(applicant must agree to "refund to FEMA or the State any portion of the assistance that the applicant receives or is eligible to receive as assistance from another source").
+ 
+And it's not $400 _more_ for lost wages. As § 408(e) Stafford Act aid, if you get it, you're liable to the US gov't "to the extent" that $400 "duplicates benefits available to the person for the same purpose from another source." 42 U.S.C. § 5155(c). 1/4
+
+The phrase "benefits available" refers not just to benefits received, but what you could have received (here, for lost wages) from "another source". State of Hawaii ex rel. Atty. Gen. v. FEMA, 294 F.3d 1152, 1159 (9th Cir. 2002) 2/4
+
+The applicable FEMA regs concur. 44 C.F.R. § 206.113(b)(7)(applicant must agree to "refund to FEMA or the State any portion of the assistance that the applicant receives or is eligible to receive as assistance from another source") 3/4
+
+Sure, the President could waive this requirement, 42 U.S.C. § 5155(b)(4), but the Trump memorandum doesn't expressly do this. 4/4
+
+
+The critical point here is that the FEMA regulations contemplate section 408 assistance _only_ to cover an incurred disaster-related "necessary expense" or "serious need". Those terms have specific meanings. The term "necessary expense" means "the cost associated with acquiring an item or items, obtaining a service, or paying for any other activity that meets a serious need." 44 C.F.R. § 206.111. The term "serious need" means "the requirement for an item, or service, that is essential to an applicant's ability to prevent, mitigate, or overcome a disaster-related hardship, injury or adverse condition." Id.
+
+Financial assistance for “other necessary expenses” provides assistance to households with certain disaster-caused miscellaneous expenses; eligible items must be purchased or rented after the incident to assist with the applicant's disaster recovery.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
