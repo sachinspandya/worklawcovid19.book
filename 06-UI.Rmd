@@ -56,24 +56,7 @@ Then, once you start getting UI benefits, you've got to do some things to keep o
 
 As COVID-19 hit the US and spread, and more workers became unemployed as a result, unemployed UI claimants faced this problem: How can they meet the "available" and "actively seeking" requirements in a pandemic? And, particularly for workers in "essential businesses" exempt from stay-at-home orders, what if those workers, though asymptomatic, wanted to quit to self-isolate or care for a family member with symptoms? 
 
-Congress also pushed States to relax some UI rules, and to provide aid of its own in three key pieces of legislation: the Families First Coronavirus Response Act, the CARES Act, and the Paycheck Protection Program.
-
-```{r UI_timeline, echo=FALSE}
-
-library(timevis)
-
-timeline_data <- data.frame(
-  id      = 1:3,
-  content = c("Families First Act", "CARES Act", "Paycheck Protection Program and Health Care Enhancement Act"),
-  start   = c("2020-03-18", "2020-03-27", "2020-04-24"),
-  end     = c(NA, NA, NA)
-)
-
-timevis(timeline_data)
-
-```
-
-In the CARES Act, Congress provided for additional UI payments (including a newly-created "Federal Pandemic Unemployment Compensation," or "FPUC"), and Congress wrote it own eligibility rules that would apply on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits.
+Congress also pushed States to relax some UI rules, and to provide aid of its own in three key pieces of legislation, incluidng the CARES Act. In the CARES Act, Congress provided for additional UI payments (including a newly-created "Federal Pandemic Unemployment Compensation," or "FPUC"), and Congress wrote it own eligibility rules that would apply on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits.
 
 This chapter parses some of these COVID-19 eligibility rules for different kinds of workers in various States.
 
@@ -85,7 +68,7 @@ When Congress passed the Families First Coronavirus Response Act in mid-March 20
 
 Thereafter, some States have adopted additional COVID-19 modifications to their UI law. For example, in August 2020, the Nevada legislature directed its UI agency to "establish justifications related to COVID-19 that may constitute good cause for a  person to refuse suitable work," and provided a non-exhaustive list of such justifications. [Nevada, SB3 § 15 (Aug. 6, 2020)](https://www.leg.state.nv.us/App/NELIS/REL/32nd2020Special/Bill/7155/Text).
 
-## Federal Pandemic Unemployment Compensation
+## Federal Pandemic Unemployment Compensation {#fpuc}
 
 Thanks to the CARES Act, enacted March 28, 2020, certain workers became eligible for Federal Pandemic Unemployment Compensation (FPUC) --  an additional $600 per week for weeks of unemployment ending on or before July 31, 2020, on top of what they could get in State UI benefits.  To get FPUC, workers had to self-certify that they were "otherwise able to work and available for work" under their State's UI law, but they were "unemployed, partially unemployed, or unable or unavailable to work," CARES Act § 2102(a)(3)(A)(ii)(I), because of one of several qualifying conditions.
 
@@ -97,9 +80,9 @@ Such qualifying conditions included that the individual is caring for a family o
 
 CARES Act § 2102(a)(3)(A)(ii)(I). Workers were ineligible for FPUC if they "telework with pay" or are receiving "paid sick leave or other paid leave benefits." CARES Act § 2102(3)(B).
 
-Congress initially settled on the flat $600 FPUC amount in the CARES Act, rather than making the FPUC amount depend on a claimant's total weekly UI payment under State law. The reason: it is harder for States to rewrite the software of their antiquated UI claims processing computer systems to implement a FPUC that varied by a claimant's prior wages during their "base period". Besides, most UI claims in 2019 were filed via the Internet, though in some States (e.g, Kansas, Vermont), many file by phone.[@DOLfiling] Adding a flat amount is a lot easier. In September 2019, only 20 States had completed their modernization projects for their UI computer systems. [cite]. A decade earlier, 90% of State UI agencies had reported that their benefits or tax systems ran on old hardware and software programming languages, such as COBOL (average age of State UI benefits I.T. system = 22 years).[@NASWA2010, 2]
+Congress initially settled on the flat $600 FPUC amount in the CARES Act, rather than making the FPUC amount depend on a claimant's total weekly UI payment under State law. The reason: it is harder for States to rewrite the software of their antiquated UI claims processing computer systems to implement a FPUC that varied by a claimant's prior wages during their "base period". Besides, most UI claims in 2019 were filed via the Internet, though in some States (e.g, Kansas, Vermont), many file by phone.[@DOLfiling] Adding a flat amount is a lot easier. In September 2019, only 20 States had completed their modernization projects for their UI computer systems. [cite]. A decade earlier, 90% of State UI agencies had reported that their benefits or tax systems ran on old hardware and software programming languages, such as COBOL (average age of State UI benefits I.T. system = 22 years) [@NASWA2010, 2].
 
-Still, when the CARES Act passed, State UI agencies could not immediately begin processing and paying out FPUC benefits. Some States, such as New Jersey and Connecticut, put out the call for COBOL programmers to help them rewrite their code, while others put more blame for delay on aging hardware.[E.g., @Botella2020] Rhode Island, in contrast, bypassed its legacy system and, within ten days after the CARES Act, built and deployed a seperate cloud-based system for collecting, validating, and paying FPUC claims.[@Angell2020]. 
+Still, when the CARES Act passed, State UI agencies could not immediately begin processing and paying out FPUC benefits. Some States, such as New Jersey and Connecticut, put out the call for COBOL programmers to help them rewrite their code, while others put more blame for delay on aging hardware.[E.g., @Botella2020] Rhode Island, in contrast, bypassed its legacy system and, within ten days after the CARES Act, built and deployed a seperate cloud-based system for collecting, validating, and paying FPUC claims [@Angell2020]. 
 
 ```{r FPUC, eval = FALSE}
 
@@ -148,52 +131,3 @@ staticplot
 By July 2020, the flat $600 FPUC amount -- set to expire on July 31 -- was still politically controversial. Some politicians complained that the $600 amount was too large, because in some cases, the total weekly UI benefit exceeded wage replacement, i.e., what what they would have received in weekly wages had they gone back to work. Research at the time, however, found little evidence that high UI amounts affected return to work [@Bartik2020; @Altonji2020]. As politicians debated, DOL asked state workforce agencies (which administer State UI programs), in a July 13 survey from DOL's UI Administrator, how long it would take to implement a revised FPUC tied to a claimant's past wages, addding “I know from our conversations with a number of you that these are heavy lifts, and we want to be able to quantify that appropriately.”[quoted in @Penn2020]
 
 On July 31, 2020, the $600 FPUC provision of the CARES Act officially expired, with nothing set up to take its place.
-
-## Presidential Memorandum and Stafford Act "Lost Wage Assistance"
-
-On August 8, 2020, admist stalled negotiations over extending FPUC, President Trump issued a [memorandum](https://www.whitehouse.gov/presidential-actions/memorandum-authorizing-needs-assistance-program-major-disaster-declarations-related-coronavirus-disease-2019/) authorizing the Federal Emergency Management Agency (FEMA) to provide "lost wages assistance" under section 408(e)(2) of the Stafford Act.  Section 408(e) of the Act -- titled "Financial assistance to address other needs" -- provides:
-
->(1) Medical, dental, child care, and funeral expenses
-The President, in consultation with the Governor of a State, may provide financial assistance under this section to an individual or household in the State who is adversely affected by a major disaster to meet disaster-related medical, dental, child care, and funeral expenses.
-
->(2) Personal property, transportation, and other expenses
-The President, in consultation with the Governor of a State, may provide financial assistance under this section to an individual or household described in paragraph (1) to address personal property, transportation, and other necessary expenses or serious needs resulting from the major disaster.
-
-[42 U.S.C. 5174(e)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title42-section5174&num=0&edition=prelim). The memorandum appears to rely on the President's statutory authority to provide financial assistance to address "other necessary expenses or serious needs resulting from the major disaster."
-
-The problem: Section 408(e)(2) is _not_ the Stafford Act section that provides for unemployment assistance. Section 410 of the Stafford Act authorizes the President to provide "to any individual unemployed as a result of a major disaster such benefit assistance as he deems appropriate" while that individual is unemployed. That individual, however, can't be "entitled to any other unemployment compensation." And disaster unemployment assistance only lasts "as long as the individual's unemployment caused by the major disaster continues or until the individual is reemployed in a suitable position," but no longer than 26 weeks after the major disaster is declared. Moreover, the amount can't be more than the maximum under the UI law of the State "in which the disaster occurred." 42 U.S.C. § 5177(a). Federal regulations, promulated by the Department of Labor, set forth eligibility requirements for such relief, see 20 C.F.R. § 625.4, including that the "individual is able to work and available for work within the meaning of the applicable State law," id. § 625.4(g). Notably, eligibility does not depend on employee status; it extends to either an unemployed worker or "an unemployed self-employed individual," id. § 625.4(c).
-
-In contrast, FEMA regulations govern "other needs" assistance under section 408(e) of the Stafford Act. 44 C.F.R. §§ 206.119, 206.120. Setting aside applicants with insurance coverage, if any, FEMA may _only_ provide section 408 assistance if the individual applying for such assistance "has incurred a disaster-related necessary expense or serious need in the state in which the disaster has been declared." 44 C.F.R. § 206.113(b)(1); see also 44 C.F.R. § 206.113(b)(10)(FEMA may not provide assistance under this subpart for "any items not otherwise authorized by this section").
-
-42 U.S.C. § 5155(c)("A person receiving Federal assistance for a major disaster or emergency shall be liable to the United States to the extent that such assistance duplicates benefits available to the person for the same purpose from another source."). State of Hawaii ex rel. Atty. Gen. v. FEMA, 294 F.3d 1152, 1159 (9th Cir. 2002) ("'benefits available' is unambiguous in that it cannot refer only to benefits actually received"); See also 44 C.F.R. § 206.116(a) (governing "recovery of funds"); 44 C.F.R. § 206.113(b)(7)(applicant must agree to "refund to FEMA or the State any portion of the assistance that the applicant receives or is eligible to receive as assistance from another source").
- 
-And it's not $400 _more_ for lost wages. As § 408(e) Stafford Act aid, if you get it, you're liable to the US gov't "to the extent" that $400 "duplicates benefits available to the person for the same purpose from another source." 42 U.S.C. § 5155(c). 1/4
-
-The phrase "benefits available" refers not just to benefits received, but what you could have received (here, for lost wages) from "another source". State of Hawaii ex rel. Atty. Gen. v. FEMA, 294 F.3d 1152, 1159 (9th Cir. 2002) 2/4
-
-The applicable FEMA regs concur. 44 C.F.R. § 206.113(b)(7)(applicant must agree to "refund to FEMA or the State any portion of the assistance that the applicant receives or is eligible to receive as assistance from another source") 3/4
-
-Sure, the President could waive this requirement, 42 U.S.C. § 5155(b)(4), but the Trump memorandum doesn't expressly do this. 4/4
-
-
-The critical point here is that the FEMA regulations contemplate section 408 assistance _only_ to cover an incurred disaster-related "necessary expense" or "serious need". Those terms have specific meanings. The term "necessary expense" means "the cost associated with acquiring an item or items, obtaining a service, or paying for any other activity that meets a serious need." 44 C.F.R. § 206.111. The term "serious need" means "the requirement for an item, or service, that is essential to an applicant's ability to prevent, mitigate, or overcome a disaster-related hardship, injury or adverse condition." Id.
-
-Financial assistance for “other necessary expenses” provides assistance to households with certain disaster-caused miscellaneous expenses; eligible items must be purchased or rented after the incident to assist with the applicant's disaster recovery.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,78 @@
+# Short-Time Compensation {#stc}
+
+-Sachin S. Pandya_, 2020-09-13
+
+## Background
+
+In the U.S., Short-Time Compensation ("STC") refers to programs adopted by some State unemployment insurance systems to encourage employers can keep employing workers during economic downturns by reducing their hours rather than laying them off [@Whittaker2016]. Under an STC program, if an employer reduces worker hours in lieu of layoffs, the State will pay those workers with pro-rated unemployment insurance benefits to cover part of what those workers lose in pay by working fewer hours.
+
+To illustrate, suppose an employer has 100 employees, each working 40 hours/week at \$25/hour ($1000/week). When demand drops, the employer can reduce weekly labor costs by \$20,000 either by laying off 20 employees or by reducing work hours for all 100 employees by 20% to 32 hours/week ($800/week, a $200/week reduction). If the employer reduces hours under an approved STC plan, the employees with reduced hours can receive STC payments (a wage subsidy) equal to 20% of what they would have received in UI had they become fully unemployed. So, if an employee, if unemployed, would have received $360/week in UI, that employee would be eligible to get $72/week (20% of \$360) in STC payments. Thus, that employee's actual pay reduction would be $128/week, not $200/week.  
+
+More generous short-time work programs exist in other industrialized countries, such as Germany's _Kurzarbeit_ (which typically covers 60% of lost net wages) [@OECD2020].
+
+Although STC has existed in the U.S. since 1978 [@Balducchi2008], only in 2012 did Congress, prompted by the 2008 recession, enact The Layoff Prevention Act of 2012, Pub. L. No. 112-96, title II(D), [126 Stat. 156](https://www.govinfo.gov/content/pkg/STATUTE-126/html/STATUTE-126-Pg156.htm), 171. That Act set the current national STC program standards and encouraged States to enact conforming legislation. Today, over half the States in the U.S. have an operational STC program [@DOL2019, tbl. 4-5]. E.g., [Conn. Gen. Stat. $\S$ 31-274j](https://www.cga.ct.gov/current/pub/chap_567.htm#sec_31-274j).
+
+Under a State's STC program, a firm must apply for STC by submitting an STC plan that satisfies certain criteria. By law, employer participation in a STC program must be "voluntary". [26 U.S.C. $\S$  3306(v)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title26/html/USCODE-2018-title26-subtitleC-chap23-sec3306.htm). 
+
+To be approved, the U.S. employer's STC plan must show that the affected employees' hours must have had their hours reduced, in lieu of layoffs, by at least 10 percent and at most a percentage set by State law (not to exceed 60 percent). If approved, the STC plan lasts for a pre-set period of time, usually 52 weeks, after which the employer may seek reapproval of its STC plan. Once approved, the workers covered by the plan, when suffering reduced hours, can apply for STC benefits. [26 U.S.C. $\S$ 3306(a)(1)(v)(2)-(4)](https://www.govinfo.gov/content/pkg/USCODE-2018-title26/html/USCODE-2018-title26-subtitleC-chap23-sec3306.htm). 
+. In some States, the employer can apply for STC benefits on behalf of those workers. E.g., [Regs. Conn. State Agencies $\S$ 31-222-13(d)(7)](https://eregulations.ct.gov/eRegsPortal/Browse/RCSA/Title_31Subtitle_31-222Section_31-222-13/).
+
+Individuals receiving STC payments must meet the UI availability for work and work search test requirements by being available for their workweek as required by state law. [26 U.S.C. $\S$ 3306(v)(5)](https://www.govinfo.gov/content/pkg/USCODE-2018-title26/html/USCODE-2018-title26-subtitleC-chap23-sec3306.htm). Moreover, the employer STC plan must provide that employers will maintain (to the same extent as for other employees not part of the STC plan) certain specified health benefits and retirement benefits for the affected employees in the affected unit, despite their reduced hours. 26 U.S.C. $\S$ 3306(v)(7).
+
+## CARES Act and STC Programs  
+
+When Congress enacted the CARES Act, it authorized 100% federal financing of STC in states with existing STC programs and 50% federal financing for states that set up STC programs (up to the equivalent of 26 weeks of benefits for individuals) through the end of December 2020. The CARES Act also provided for Federal Pandemic Unemployment Compensation (FPUC) - additional $600 in payments to UI claimants who met certain qualifying criteria.  This additional \$600 applied to STC payments as well, so that the employee working reduced hours was eligible for the full \$600 in FPUC _on top of_ their STC benefits. [UI Program Letter 15-20](https://wdr.doleta.gov/directives/attach/UIPL/UIPL_15-20.pdf).
+
+Thereafter, the number of employers with STC plans appears to have increased in most States with STC programs (Figure \@ref(fig:stc_fig)).
+
+```{r stc_fig, warning=FALSE, echo=FALSE, message = FALSE, cache = TRUE, fig.cap = "Change in STC-enrolled Employers by State"}
+
+library(tidyverse)
+
+data <- read_csv("https://oui.doleta.gov/unemploy/csv/aw5159.csv")
+
+path_save <- here::here("data","aw5159.csv")
+write_csv(data, path_save)
+
+data <- read_csv(path_save) 
+
+library(lubridate)
+
+d <- data %>%
+  mutate(report_date = mdy(rptdate),
+         report_year = year(report_date),
+         report_month = month(report_date, label = TRUE, abbr = FALSE)
+         ) %>%
+  rename(stateab = st) %>%
+  filter(
+         #stateab != "VI",
+         #c10 != 0,
+         report_date > ymd("2019-11-01")
+         )
+
+staticplot <- ggplot(d,aes(x = c10, y = reorder(stateab,c10), 
+                     fill=as.factor(stateab),color=as.factor(stateab))) +
+        geom_col() +
+        theme_minimal() + ylab("") + 
+        guides(color = FALSE, fill = FALSE)
+
+library(gganimate)
+
+anim <- staticplot +
+  transition_states(report_date, transition_length = 2, state_length = 1) +
+  #ease_aes('sine-in-out') +
+  labs(title = "Number of STC Employers",
+		   subtitle = "{closest_state} Report",
+       #subtitle = 'Frame {frame} of {nframes}',
+        caption = "Source: USDOL ETA 5159") + 
+  theme(axis.title.x=element_blank())
+
+stc_gif <- animate(anim, nframes = 80, end_pause = 20, rewind = F, renderer = 
+       gifski_renderer())
+
+stc_gif
+
+```
+
+On July 31, 2020, the FPUC $600 weekly payments expired. 
+

@@ -1,0 +1,138 @@
+# Work Leave for Caregiving
+
+_Deborah A. Widiss_, 2020-09-04
+
+# Introduction
+
+Even in normal times, it can be very difficult to balance job duties with family responsibilities. COVID-19 has brought this conflict to a head, with schools and childcare providers closed or operating remotely, and workers called on to care for family members who become ill. Although Congress enacted  limited workplace leave to address some COVID-related needs (see Chap. X), these laws are set to expire at the end of 2020. This Chapter explains how other laws - mostly on the books before COVID-19 - offer workers paid or unpaid leave from work for caregiving, as well as some protection from discriminatory actions by employers. These laws, while helpful, do not meet the challenge. Because women tend to pick up the slack, COVID-19 will likely worsen gender-based inequalities in ways that may persist long after the virus subsides.
+
+## Meeting Caregiving Responsibilities While Working
+
+Many American workers regularly juggle work with caregiving for family. In 2019, most parents of children under 18 were employed. This is true for both married (different-sex) couples with children (in 14.7 million families out of 22.9 million, or about two-thirds, both parents were employed) and single-parent families (in 6 million out of 7.9 million families headed by mothers and 2.2 million out of 2.6 million families headed by fathers, the parent caring for children also worked) [@BLS2020, tbl. 4]. Single or partnered LGBT parents also are typically employed [@Gates2013]. Millions of workers also provide significant support for adult family members with a disability, elderly parents, or a spouse or partner [@FCA2016]. 
+
+In March 2020, because of COVID-19, schools and childcare centers across the country suddenly shut down or transitioned to remote learning. As a result, many employed parents became de facto teachers for their children while simultaneously trying to meet their own work responsibilities. Adult day care centers throughout the country also closed [@Flinn2020]. As the virus spread, many workers, if not themselves sick, cared for sick family members. At the same time, because of record levels of unemployment, individuals lucky enough to stay employed may have been reluctant to ask for any kind of special dispensation at work to help meet family-related obligations.
+
+In summer 2020, as some businesses reopened, for many, that only heightened the challenge. Many school districts, including many of the nation's largest, are opening for fall 2020 entirely online or using a hybrid model with students attending only a few days a week. Many childcare providers have closed; of those that are open, 86% are operating at reduced capacity and most are also incurring extra costs for personal protective and sanitation equipment [@Hogan2020]. Aid packages passed by the U.S. Congress in the spring 2020, and those proposed by the Democratic-controlled House and the Republican-controlled Senate in summer 2020, fall far short of the $50 billion that industry experts said is needed [@Leonhardt2020]. A possible result: permanently losing almost half of the nation's childcare capacity [@Howard2020].
+
+Even if child and adult care centers and schools are physically open, many families fear they pose too high a risk of infection. This is especially true if anyone in the household has underlying conditions that make them particularly vulnerable to COVID-19. Nonetheless, workers who had been furloughed or permitted to work remotely are now being asked, or required, to come back to physical workplaces. The result is a caregiving crisis, as existing laws offer only very limited support for workers torn in too many directions. 
+
+## Leave Rights for Family Caregiving
+
+If a worker asks for leave seek to address COVID-related family needs, the kind of leave that worker seeks will vary by need and job type. Some employees might ask to be off work entirely to care for an ill family member. Here, leave duration will vary with illness severity. Others might still work but seek flexibility over a while to care for young children or help school-age children with remote learning. And still others might need time off from in-person work, because they are subject to a quarantine order, but could still work as usual, albeit remotely.  
+Employees typically look first to their employer's regular policies to address such needs. Unlike most developed countries, workers in the United States generally are not guaranteed sick leave, vacation days, personal days [@Heymann2020]. Nor is there a right to ask for schedule modifications to address caregiving needs. 
+
+Most full-time workers receive a few weeks of paid time off per year, including paid sick days. However, lower-paid workers are less likely to receive paid sick leave than higher paid workers (Figure 1). Among the bottom ten percent of workers (by average wage), 31% of them received paid sick leave, as compared to 94% for the top ten percent of workers. Fewer than half of part-time workers received paid sick days at all [@BLS2019, tbl. 31].
+
+
+```{r leave_avg_wage, echo = FALSE, fig.cap=""}
+
+# Data source: (BLS 2019, tbl. 31) https://www.bls.gov/ncs/ebs/benefits/2019/employee-benefits-in-the-united-states-march-2019.pdf
+
+# create a dataset
+
+specie <- c(rep("sorgho" , 3) , rep("poacee" , 3) , rep("banana" , 3) , rep("triticum" , 3) )
+condition <- rep(c("normal" , "stress" , "Nitrogen") , 4)
+value <- abs(rnorm(12 , 0 , 15))
+data <- data.frame(specie,condition,value)
+
+q <- c("bottom" , "second", "third", "top") 
+quartile <- c(rep(q, 3))
+type <- c(rep("paid sick leave" , 4) , rep("paid family leave" , 4) , rep("unpaid family leave" , 4))
+
+pd_sl <- c(51,79,88,92)
+pd_fl <- c(9,18,22,30)
+unpd_fl <- c(82,89,91,94)
+pct <- c(pd_sl,pd_fl,unpd_fl)
+
+d2 <- data.frame(quartile,type,pct)
+
+# Grouped
+
+library(ggplot2)
+ggplot(data, aes(fill=quartile, y=pct, x=type)) + 
+    geom_bar(position="dodge", stat="identity") + theme_minimal() +
+    xlab("") + 
+  labs(title = "Leave Type by Average Worker Wage",
+              subtitle = "Civilian Workers, 2019",
+              caption = "Data Source: BLS 2019, tbl. 31")
+
+
+```
+
+
+Whatever else employer policies provide, some laws require employers to provide time off for certain caregiving responsibilities. These laws tend to fall into two types: (1)  sick day laws, which require employers to provide a relatively limited number of days, usually at full pay, to address illness and other health-related needs; and (2) medical leave laws, which let a worker to take a longer period of time off, sometimes at reduced pay or no pay, to address more serious medical conditions (Figure 2).
+
+```{r state_map, echo = FALSE, message = FALSE, warnings = FALSE, fig.cap = " "}
+
+# Data Sources: 
+#https://www.abetterbalance.org/resources/paid-family-leave-laws-chart/
+#https://www.abetterbalance.org/resources/emergencysickleavetracker/; 
+#www.abetterbalance.org/paid-sick-time-laws/; 
+#www.ncsl.org/research/labor-and-employment/paid-sick-leave.aspx 
+
+#load_path <- here::here("data","state_leave_laws_2020-08-21.csv")
+load_path <- "state_leave_laws_2020-08-21.csv"
+
+d <- readr::read_csv(load_path)
+
+library(statebins)
+library(ggplot2)
+library(dplyr)
+
+d <- d %>%
+  mutate (pfmlv = as.character(paid_fmlv),
+          pslv = as.character(paid_sicklv))
+
+d <- d %>%
+  mutate (value = if_else(paid_fmlv == 1 & paid_sicklv == 1, "sick and medical",
+                  if_else(paid_fmlv == 1 & paid_sicklv == 0, "medical only", 
+                  if_else(paid_fmlv == 0 & paid_sicklv == 1, "sick only", "none")))
+          )
+
+statebins(d, 
+          value_col="value", 
+          state_col = "state",
+          ggplot2_scale_function = scale_fill_brewer,
+          palette="Accent",
+          #round = TRUE,
+          name = "State Paid Leave Laws, 2020") + 
+          theme_statebins(legend_position="bottom") + 
+            labs(caption = "Data Source: A Better Balance 2020a,2020b")
+
+
+
+```
+
+First, while no permanent federal law guarantees paid sick days, thirteen states, the District of Columbia, and twenty-one cities and counties do [@BB2020a]. Two states have laws that provide comparable amounts of paid time off for both health-related reasons and other reasons. Additionally, the federal COVID-response law requires certain employers to provide paid sick leave until that law expires in December 2020.
+
+The state and local paid sick day laws typically provide up to 40 hours per year at regular pay. A worker may use this time to stay home if she is sick, is caring for a family member who is sick, or is seeking preventive health care. Some of these laws also apply if a business, school, or childcare provider is closed due to a public health emergency [@BB2020a].
+
+In several states, executive orders or administrative guidance issued during that pandemic has clarified that they can be used for additional COVID-specific needs, such as tests or complying with a quarantine directive [cite]. A few states have also passed COVID-specific paid sick day laws. Paid sick day laws can help with short-term needs related to COVID-19. They do not, however, provide much relief for the longer-term disruptions that may be caused by schools operating remotely for several months, or serious cases of COVID-19. 
+
+Second, medical leave laws address longer-term absences. The Family and Medical Leave Act (FMLA) requires employers to provide up to 12 weeks of unpaid, job-protected leave to care for a spouse, son, daughter, or parent with a "serious health condition." [29 U.S.C. $\S$  2612(a)(1)(C)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2612.htm); [29 C.F.R. $\S$ 825.112(a)(3)](https://www.ecfr.gov/cgi-bin/text-idx?SID=37e96589d012f4345da3582b7493ae24&mc=true&node=se29.3.825_1112&rgn=div8). (The FMLA also requires leave to address an employee's own serious health condition, to care for a new child, and for certain military-related care needs.) The permanent provisions of the FMLA only apply to workplaces with at least 50 employees, and employees who have worked at least 1250 hours (about 25 hours per week) for the employer in the prior year. [29 U.S.C. $\S$ 2611](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2611.htm). These restrictions exclude about 40% of the private sector workforce [@Klerman2014]. 
+
+Even if an employee qualifies for FMLA leave, the permanent provisions of the FMLA address only some COVID-related caregiving needs. The FMLA  defines "serious health condition" as a condition that causes an incapacity to work and requires either inpatient care in a hospital or continuing treatment by a health care provider. [29 C.F.R. $\S$ 825.113](https://www.ecfr.gov/cgi-bin/text-idx?SID=7fb26651da323c8e88f516274232d90b&mc=true&node=se29.3.825_1113&rgn=div8). A COVID-19 case that requires hospitalization or is gravely debilitating would meet this standard. A relatively mild case is less likely to qualify; the flu and colds typically do not unless they involve complications. 29 C.F.R. $\S$ 825.113(d). However, if a patient were instructed by her doctor or applicable public health orders to quarantine, and thus could not work or attend school for several days, that instruction may be enough to prove the requisite level of incapacity. According to the U.S. Department of Labor, the FMLA does not provide leave to take care of healthy children, even if they are home because of school or childcare closures [@DOL2020]. FMLA leave is also unpaid. Many workers cannot afford to be home for very long without a paycheck. (Temporary COVID-specific provisions modify some of the coverage restrictions and offer short-term partially paid leaves for certain purposes. See Chap. X.)
+
+Some states offer more by requiring paid leave for similar purposes as the FMLA provides unpaid leave. As of September 2020, eight states, and the District of Columbia, have such family and medical leave laws; approximately one quarter of Americans live in a state with a paid leave law [@Widiss2020]. Typically funded by a small payroll tax, they generally offer employees between 60% and 100% of regular wages, up to a cap set at the median state wage. 
+
+These State laws cover more workers than the FMLA, because generally there are no limits on employer size and most part-time workers are eligible [@BB2020b]. In many states, independent contractors may also opt into the system. The states differ in the length of permitted leave. More recent laws authorize 12 weeks of benefits; however, some of them are not yet fully phased in, while some older laws offer only 6 or 8 weeks of benefits. Like the FMLA, these laws may apply if a worker is caring for a family member with COVID-19 if it qualifies as a "serious health condition," but they will not cover workers caring for healthy children at home because their schools or childcare providers are closed. 
+
+In sum, non-COVID-specific leave laws can offer some important to protections to workers, but they are far from sufficient to meet caregiving needs related to the pandemic. 
+
+## Caregiver Discrimination 
+
+While the law rarely requires employers to provide leave or otherwise accommodate their employees' caregiving responsibilities, employers may not treat employees differently on the basis of sex, disability, race, and other prohibited factors [@EEOC2007]. These cases are often known as "family responsibilities discrimination."
+
+Many of these claims concern sex discrimination. The relevant federal law, Title VII of the Civil Rights Act of 1964, prohibits employer discrimination against an individual employee because of that  employee's sex. [42 U.S.C. $\S$ 2000e-2(a)](https://www.govinfo.gov/content/pkg/USCODE-2018-title42/html/USCODE-2018-title42-chap21-subchapVI-sec2000e-2.htm). State and local laws offer analogous protections. Although employers may require that employees complete their regular workplace tasks despite caregiving responsibilities, they may not assume that women will have a harder time doing so than men, and accordingly deny women workplace opportunities as a result. Nor may they unfairly punish men who seek to share the family caregiving load. Under employment discrimination law, either form of differential treatment may give rise to a viable claim if the worker suffers an adverse employment action as a result. This could include being denied a job, fired, or denied a promotion. It can also include workplace harassment if the harassment is severe or pervasive enough. Additionally, the FMLA and similar state and local leave laws prohibit employers from retaliating against employees for seeking or taking authorized leave. E.g., [29 U.S.C. $\S$ 2615](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2615.htm).
+
+Because of the disruptions caused by COVID, employers are more likely to engage in family responsibilities discrimination. If an employer considering candidates for a promotion asks a female employee, but not a male employee, whether she will be able to do the job and also care for her kids, the interviewer may have improperly relied on a sex-based stereotype. Likewise, if an employer modifies its usual policies to allow a woman to work at home because her children's school is closed, but refuses to allow a male employee to do the same, the man may have suffered unlawful discrimination. Or if a supervisor regularly harasses an employee in sexist terms because the employee's children are visible during Zoom-based meetings, the supervisor may have acted illegally. 
+
+Anecdotal reports suggest such discrimination has occurred in the COVID-era. Between April and June 2020, caregiver-related calls to The Center for WorkLife Law's hotline for employees increased by 250% compared to the same time in 2019 [@Williams2020]. And, in an July 2020 online survey of salaried employees in the U.S. (n = 1,051), 34% of men with children at home, as compared to 9% of women with children at home, said they received a promotion while working remotely [@Rogers2020]. 
+
+## Effects on Gender Equality 
+
+Women typically bear a disproportionate share of the caregiving burden, even if they are also working full time for pay outside the home [e.g., @Patten2015]. Emerging studies suggest that the pandemic has, in many families, exacerbated such inequalities. Women are far more likely than men to disrupt their work days to meet their children's needs or other caregiving responsibilities [e.g., @Zamarro2020; @Collins2020]. 
+   
+The caregiving challenges caused by COVID will persist or worsen, particularly since many schools are opening remotely in fall 2020. Workers are, quite simply, being stretched too thin. The likely result will be that many women, and some men, will decide to leave the workforce. This will cause significant financial hardship to many families, and it will widen gender gaps in earnings and retirement security. Parents who can't afford to quit working, particularly single parents, may have to rely on inadequate and unstable childcare arrangements, or simply leaving kids home alone. 
+
+There is, however, a glimmer of hope. Although women are doing a greater share of caregiving, men are also shouldering enhanced responsibilities [e.g. @Krentz2020, five-country survey, March 3 - April 3, 2020]. Fathers may remain more involved even when the crisis subsides. The pandemic has also spotlighted how essential childcare, schools, and adult care facilities are for a productive workforce. This has bolstered public support for policies such as paid family leave and universal childcare. Already, a few states have responded to the crisis by enacting provisions that will be permanent. If this trend continues, the pandemic could spur more general legislative reform that could help families better balance work and caregiving needs, both now and in the future.

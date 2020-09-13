@@ -1,12 +1,14 @@
-# Safety {#safety}
+# (PART\*) Workplace Safety {-} 
 
-## Background
+# U.S. Workplace Safety Law: A Primer
 
-COVID-19 has highlighted the ways that law in the U.S. protects worker health and safety, as well as the gap between that law on paper and in action.
+_Sachin S. Pandya_, 2020-09-12
 
-### Federal Law: OSHA {#osha_fed}
+COVID-19 has highlighted the ways that law in the U.S. protects worker health and safety, as well as the gap between that law on paper and in action. Here, we'll cover some of the basics of federal workplace safety law.
 
-On paper, the Occupational Safety and Health Act of 1970 provides for worker health and safety in two main ways.  
+## Federal Law: OSHA {#osha_fed}
+
+On paper, the Occupational Safety and Health Act of 1970 (the OSH Act) provides for worker health and safety in two main ways.  
 
 First, its so-called general-duty clause requires each employer to "furnish to each of his employees employment and a place of employment which are free from recognized hazards that are causing or are likely to cause death or serious physical harm to his employees." [29 U.S.C. § 654(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec654.htm). 
 
@@ -14,19 +16,25 @@ Second, the OSH Act requires employers to "comply with occupational safety and h
 
 There is no private right to sue employers under the OSH Act. Instead, the Occupational Health and Safety Agency (OHSA) is the exclusive enforcer of the OSH Act's general-duty clause and of the safety standards issued under that Act, by way of inspections and civil penalties. 
 
-### State OSHA {#osha_state}
+## State OSHA {#osha_state}
 
-The OSH Act does permit States to enforce work safety under pre-approved plans, including issuing their own safety standards, provided the plan is no less effective as the OSH Act in protecting workers for work-related injuries, illnesses and deaths.  Today, twenty-two states have OSHA approved plans, and six States have approved plans covering only state and local government workers. These States can thereby issue safety standards on their own to cover their State. For example, California's work safety agency (Cal/OSHA) issued a occupational safety standard for protecting against aerosol transmissable diseases in medical and some other workplaces. [Cal. Regs. tit. 8, sec. 5199](https://www.dir.ca.gov/title8/5199.html). In July 2020, Virgnia's workplace safety agency issued an emergency temporary standard for COVID-19 exposure. [§ 16 VAC 25-220](https://www.doli.virginia.gov/wp-content/uploads/2020/07/COVID-19-Emergency-Temporary-Standard-FOR-PUBLIC-DISTRIBUTION-FINAL-7.17.2020.pdf). For details, see @Szymendera2020 [pp. 10-15].
+The OSH Act does permit States to enforce work safety under pre-approved plans, including issuing their own safety standards, provided the plan is no less effective as the OSH Act in protecting workers for work-related injuries, illnesses and deaths.  Today, twenty-two states have OSHA approved plans, and six States have approved plans covering only state and local government workers. These States can thereby issue safety standards on their own to cover their State. 
 
-### OSHA Enforcement
+For example, California's work safety agency (Cal/OSHA) issued a occupational safety standard for protecting against aerosol transmissable diseases in medical and some other workplaces. [Cal. Regs. tit. 8, $\S$ 5199](https://www.dir.ca.gov/title8/5199.html). 
+
+In July 2020, Virgnia's workplace safety agency issued an emergency temporary standard for COVID-19 exposure. [§ 16 VAC 25-220](https://www.doli.virginia.gov/wp-content/uploads/2020/07/COVID-19-Emergency-Temporary-Standard-FOR-PUBLIC-DISTRIBUTION-FINAL-7.17.2020.pdf). For details, see @Szymendera2020 [pp. 10-15].
+
+## OSHA Enforcement {#osha_enfr}
 
 In April 2020, OSHA told its regional adminstrators that, because of COVID-related business closures, travel and group-size limits, and other restrictions, safety inspectors should judge whether an employer "made good faith efforts to comply with applicable OSHA standards" and if compliance wasn't possible, "to ensure that employees were not exposed to hazards from tasks, processes, or equipment for which they were not prepared or trained."[OSHA_mem_april2020](https://www.osha.gov/memos/2020-04-16/discretion-enforcement-when-considering-employers-good-faith-efforts-during). 
 
-OSHA also published a guidance document to help employers implement engineering, administrative, and work practice controls and PPE to reduce COVID-19 exposure risk in the workplace, as part of an Infection Disease Preparedness and Response Plan.[@OSHA_g2020].
+OSHA also published a guidance document to help employers implement engineering, administrative, and work practice controls and PPE to reduce COVID-19 exposure risk in the workplace, as part of an Infection Disease Preparedness and Response Plan [@OSHA_g2020].
 
-From Febuary through August 2020, OSHA received about 7,700 COVID-related complaints and about 1,000 COVID-related referrals (mostly from the health care industry); closed about 6,800 cases; but issued only two citations.[@OSHA2020].
+From Febuary through August 2020, OSHA received about 7,700 COVID-related complaints and about 1,000 COVID-related referrals (mostly from the health care industry); closed about 6,800 cases; but issued only two citations [@OSHA2020].
 
-### Emergency Temporary Standards
+## Emergency Temporary Standards {#osha_ets}
+
+Since March 2020, OSHA has refused to adopt an ETS for airborne infectous disease that would cover COVID-19 exposure in the workplace.
 
 Although OSHA takes many years to promulgate safety standards, OSHA may also issue an "emergency temporary standard to take immediate effect" when published in the Federal Register if the Secretary determines
 
@@ -35,7 +43,7 @@ Although OSHA takes many years to promulgate safety standards, OSHA may also iss
 
 [29 U.S.C. § 655(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec655.htm). OSHA has not issued an ETS since 1983.[@Szymendera2020, appendix].
 
-Since March 2020, OSHA has refused to adopt an ETS for airborne infectous disease that would cover COVID-19 exposure in the workplace. And while a court may order OHSA to adopt an ETS in limited circumstances see 5 U.S.C. § 706(1), the U.S. Court of Appeals for the D.C. Circuit has thus far refused to order OSHA to issue an ETS:  
+OSHA thus far refused to adopt an ETS that would cover COVID-19 exposure. And while a court may order OHSA to adopt an ETS in limited circumstances see 5 U.S.C. § 706(1), the U.S. Court of Appeals for the D.C. Circuit has thus far refused to order OSHA to issue an ETS:  
 
 > The OSHA’s decision not to issue an ETS is entitled to considerable deference. In light of the unprecedented nature of the COVID-19 pandemic, as well as the regulatory tools that the OSHA has at its disposal to ensure that employers are maintaining hazard-free work environments, see 29 U.S.C. § 654(a), the OSHA reasonably determined that an ETS is not necessary at this time."
 

@@ -1,6 +1,6 @@
 # Undocumented Worker Relief Funds {#undocumented}
 
-In the US, undocumented workers face special challenges under the law because of their immigration status. How did undocumented workers fare differently because of COVID-19? And how did governments and employers respond (or not) to address the distinctive issues faced by those undocumented workers?
+In the US, undocumented workers face special challenges under the law because of their immigration status. How did undocumented workers fare differently because of COVID-19? And how did governments and employers respond (or not) to address the distinctive issues faced by those undocumented workers? This Chapter addresses this questions.
 
 ## Background
 
@@ -20,11 +20,11 @@ Moreover, Congress left States a way to opt-out:
 
 Since 1996, some State legislatures have passed laws to trigger the section 1621(d) opt-out for work licenses. E.g., Cal. Bus. & Prof. Code § 135.5; 20 Ill. Comp. Stat. 2105/2105-140. Some of those laws, however, cover only particular occupations or subsets of undocumented workers, such as DACA recipients.[@Olivas2017, compiling statutes]
 
-All this meant that, when COVID-19 hit, federal law already made otherwise eligibile undocumented workers in most States ineligible for State unemployment insurance and many other State and local public benefits.
+All this meant that, when COVID-19 hit, federal law already made otherwise eligibile undocumented workers in most States ineligible for State unemployment insurance and some other State and local public benefits [@Kolker2020].
 
 ## The CARES Act and Social Security numbers
 
-Moreover, although Congress provided in the CARES Act for pandemic unemployment assistance benefits (PUA), it required that anyone applying for PUA use that individual's Social Security number (SSN), not an Individual Taxpayer Identification Number (ITIN), which the IRS issues to those who aren't eligible for an SSN, [26 C.F.R. § 301.6109-1(a)(1)(ii)(B)](https://www.ecfr.gov/cgi-bin/text-idx?node=pt26.20.301&rgn=div5#se26.20.301_16109_61). This requirement effectively excluded undocumented workers, because they are ineligible for an SSN.
+Although Congress provided in the CARES Act for pandemic unemployment assistance benefits (PUA), it required that anyone applying for PUA use that individual's Social Security number (SSN), not an Individual Taxpayer Identification Number (ITIN), which the IRS issues to those who aren't eligible for an SSN, [26 C.F.R. § 301.6109-1(a)(1)(ii)(B)](https://www.ecfr.gov/cgi-bin/text-idx?node=pt26.20.301&rgn=div5#se26.20.301_16109_61). This requirement effectively excluded undocumented workers, because they are ineligible for an SSN.
 
 The CARES Act similarly required an SSN to be eligible for a refundable tax credit it provided for the 2020 tax year ($1,200, or $2,400 joint filers, plus a $500 credit for each qualifying child under the age of seventeen). [26 U.S.C. § 6428(a)](https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title26-section6428&num=0&edition=prelim). 
 
@@ -37,7 +37,7 @@ The second lawsuit, filed by sixteen U.S. citizens whose spouses lack legal stat
 
 ## Disaster relief funds
 
-In response to the exclusions for undocumented workers, some NGOs worked with private philanthorpy to create COVID-19 relief funds for anyone not eligible for another type of federal or State aid -- including, but limited to, undocumented, workers.[@GCIR2020] So long as those NGO funds didn't contain "appropriated funds of a State or local government," 8 U.S.C. § 1621(c)(1)(B), the PRWORA restriction didn't apply. To be sure, where the NGO funds didn't ask claimants about their immigration status, there would no proof that the State or local appropriated funds had gone to undocumented workers in any case.
+In response to the exclusions for undocumented workers, some NGOs worked with private philanthorpy to create COVID-19 relief funds for anyone not eligible for another type of federal or State aid -- including, but limited to, undocumented, workers [@GCIR2020]. So long as those NGO funds didn't contain "appropriated funds of a State or local government," 8 U.S.C. § 1621(c)(1)(B), the PRWORA restriction didn't apply. To be sure, where the NGO funds didn't ask claimants about their immigration status, there would no proof that the State or local appropriated funds had gone to undocumented workers in any case.
 
 In few places, however, a State or local government committed itself to funding cash payments to undocumented worker suffering because of COVID-19.
 
@@ -45,13 +45,13 @@ In few places, however, a State or local government committed itself to funding 
 
 On April 15, 2020, California Governor Newsom announced the Disaster Relief Assistance for Immigrants project. California would provide up to $75 million in one-time cash disaster relief benefits ($500 for an undocumented adult, $1000 maximum in aid per household) to undocumented Californians, if they showed that had suffered hardship because of COVID-19 and didn't qualify for federal COVID-19 aid. [cite]. The funds consisted of two parts: $16.5 million from the State's Rapid Response Program, adopted in June 2019, and $63.3 million from the appropriation made in section 36 of the Budget Act of 2019 (passed March 17, 2020).
 
-Did this relief fund violate the federal statute in 8 U.S.C. § 1621 that bars "State and local public benefits" to undocumented people?  In two lawsuits (filed on behalf of taxpayer plaintiffs by politically conservative NGOs: the Center for American Liberty and Judicial Watch), the plaintiffs argued that it did. See Crest v. Newsom, No. 20STCV16321 (Cal. Superior Court, L.A. County, complaint filed April 29, 2019); Benitez v. Newsom, [cite] (Calif. Sup. Ct., emergency petition filed April 22, 2020).
+Did this relief fund violate the federal statute in 8 U.S.C. § 1621 that bars "State and local public benefits" to undocumented people?  In two lawsuits (filed on behalf of taxpayer plaintiffs by politically conservative NGOs: the Center for American Liberty and Judicial Watch), the plaintiffs argued that it did. Crest v. Newsom, No. 20STCV16321 (Cal. Superior Court, L.A. County, complaint filed April 29, 2019); Benitez v. Newsom (Calif. Sup. Ct., emergency petition filed April 22, 2020).
 
 In response to the *Benitez* petition, California's Attorney General argued that California had already done enough to have opted out under 8 U.S.C. § 1621(d). Although California law already made undocumented persons ineligible for UI benefits, see [Cal. Unemp. Ins. Code 1264(a)(1)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1264&lawCode=UIC), this was disaster relief, not UI, and the Legisature had already declared that its Rapid Response Program was "a state law that provides assistance and services for undocumented persons within the meaning of [8 U.S.C. § 1621(d)]," [Cal. Welfare & Inst. Code 13403](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=13403&lawCode=WIC).
 
 What about the other $63.3 million, which came from a seperate legislative appropriation enacted on March 17, 2020, _not_ directly from the Rapid Response Program?  There, the AG argued that, in that March 2020 legislation, the Legislature had authorized the Director of California's Department of Finance to allocate those funds to any item for any purpose related to Governor Newsom’s emergency proclamation. (Stats. 2019, ch. 27, § 2.) About a month later, that Director allocated an additional $63.3 million to the Department of Social Services to fund the emergency relief fund for undocumented persons. Accordingly, the AG concluded, that was enough to satisfy 8 U.S.C. § 1621(d)'s opt-out provision, which after all did not require a state law to expressly refer to section 1621(d) itself. Besides, when it enacted 8 U.S.C. § 1621(d), Congress didn't intend that a State, once it opted out with respect to a State or local benefit, had to do it again every time it appropriated funding for that benefit. The lawsuits in *Benitez* and *Crest* are still pending resolution.
 
-The Fund's application window opened on May 18, 2020 and closed on June 30, 2020. By July 1, 2020, the Fund had received 150,000 applications for benefits; approved 104,830 of them (about 70%); and disbursed about \$43 million Statewide.[@CADSS2020]
+The Fund's application window opened on May 18, 2020 and closed on June 30, 2020. On July 1, 2020, the Fund had received 150,000 applications for benefits; approved 104,830 of them (about 70%); and disbursed about \$43 million Statewide [@CADSS2020].
 
 ### Oregon
 
@@ -59,5 +59,5 @@ In early April 2020, several NGOs created the [Oregon Worker Relief Fund](https:
 
 On April 23, 2020, the Oregon Legislature's Joint Emergency Board -- a legislative committee that can allocate state funds from a special Emergency Fund when the Legislature is not in session -- voted to allocate $10 million to the Fund by authorizing a grant to the Oregon Community Foundation to "oversee a culturally-specific community based grant program to make payments to workers who are ineligible for wage replacement payments from traditional unemployment insurance programs." [Oregon Legislative Fiscal Office Certficate para. 4 (April 23, 2020)](https://www.oregonlegislature.gov/lfo/eboard/EB%20Certificate%2004-23-2020.pdf).
 
-By late July 2020, the Oregon Worker Relief Fund had disbursed more than $10 million in aid.[@Goldberg2020]
+By late July 2020, the Oregon Worker Relief Fund had disbursed more than $10 million in aid [@Goldberg2020].
 
