@@ -5,6 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [references_Pandya.bib, packages.bib, references_Duff.bib, references_Widiss.bib, references_Tippett.bib, references_Pendo.bib]
+#bibliography: [book.bib, packages.bib]
 #citation_package: biblatex
 biblio-style: apalike
 link-citations: yes
@@ -17,7 +18,7 @@ cover-image: "images/cdc_covid19_image.tif"
 This book is a first stab by a group of researchers to expose and explain the ways that COVID-19 has thus far affected work law in the US, both on the books and on the ground. The focus is on the US with a comparative look at few other countries. This book, like the virus, is ongoing. We aim to _update_ the book as quickly as we can as events and information change. To that end, feel free to send comments and suggestions to a contribution's author, or to this book's editors at <mailto: sachin.pandya@uconn>.
 
 
-```{r pckbib eval=FALSE} 
+```{r pckbib} 
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown', 'ggplot2', 'gganimate', 'DT'
