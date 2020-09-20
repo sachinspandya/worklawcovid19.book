@@ -1,0 +1,65 @@
+---
+title: "Paid Leave under The Families First Coronavirus Response Act"
+subtitle: "A Stopgap Leave Law with its own Gaps"
+output:
+    word_document
+#    html_document:
+#    theme: readable
+#    number_sections: true
+bibliography: references_Tippett.bib
+#biblio-style: apalike
+link-citations: yes
+---
+
+_Elizabeth C. Tippett_, 2020-09-15
+
+The Families First Coronavirus Response Act, [Pub. L. No. 116-127, 134 Stat. 178](https://www.govinfo.gov/content/pkg/PLAW-116publ127/uslm/PLAW-116publ127.xml) (2020) ("FFCRA") is the first federal law providing paid sick leave and family leave.  Enacted in March 2020, the FFCRA represented an educated guess about the leave-related protections workers might need in a rapidly changing landscape. When the bill was first introduced, the U.S. had fewer than 2,000 confirmed coronavirus cases. Just one week later, when Congress passed the bill, cases had climbed to 9,000 [@Brockway2020]. But the larger wave of cases, stay-at-home orders, school closures and skyrocketing unemployment claims were yet to come.
+
+Although the FFCRA made paid leave available to millions of workers, it had many coverage gaps. Here, I explain the gaps under prior law and under the FFCRA.
+
+## Sick Leave and Family Leave before the FFCRA
+
+Before the FFCRA, employees had no right to paid sick leave under federal law.  Moreover, only thirteen states, the District of Columbia, and some localities had paid sick leave laws. Under these laws, workers accumulated sick leave slowly and companies could set a limit anywhere from 7 to 10 days [@KFF2020].
+
+Prior to the pandemic, around 75% of workers had access to paid sick leave - primarily through voluntary employer plans – but low wage workers and part-time workers were disproportionately excluded from such benefits [@BLS2019, tbl. 31]. And while some state and local leave ordinances make sick leave available for school closures due to a public health emergency, e.g., [N.J. Admin. Code § 34:11D-3(a)(4)](https://nj.gov/labor/wagehour/lawregs/nj_state_wage_and_hour_laws_and_regulations.html#11D3); [Mich. Comp. L. § 408.964(1)(d)]( https://www.legislature.mi.gov/(S(5ef2hasxpmojpxjmdaztaamo))/printDocument.aspx?objectName=mcl-408-964&version=txt); [San Diego Municipal Code § 39.0106(a)(6)]( http://docs.sandiego.gov/municode/MuniCodeChapter03/Ch03Art09Division01.pdf); [Municipal Code Of Chicago § 1-24-045(c)(2)(D)]( https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2439623), employer policies did not contemplate prolonged school closures [@SHRM2020].
+
+The primary federal leave law is the Family and Medical Leave Act of 1993 (FMLA). The FMLA provides for up to 12 weeks of unpaid leave in connection with the employee's own serious health condition, the birth or adoption of a child, or the serious medical condition of a family member. [29 U.S.C § 2612(a)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2612.htm).  However, the law only covers employers with 50 or more employees, and workers with more than a year of service at that company. [29 U.S.C § 2611(2)(A), (4)(A)(i)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2611.htm).  That's about 60% of American workers [@Klerman2014].
+
+During COVID-19, the FMLA alone offered limited protection. FMLA leave is unpaid and does not cover leaves for school closures.  When the pandemic began, it was also unclear whether workers sick with the coronavirus could avail themselves of its protections, since FMLA regulations provide that the "flu" is considered insufficiently severe to qualify as a "serious health condition," unless "complications arise" or the patient is hospitalized. [29 C.F.R § 825.113(d)](https://www.ecfr.gov/cgi-bin/text-idx?SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&node=se29.3.825_1113&rgn=div8). While the Department of Labor ("DOL") has not formally altered its position on this point, an FAQ section of its website presumes that COVID-19 "complications" would qualify as a serious health condition [@DOL2020].
+
+## Benefits under the FFCRA
+
+Congress passed the FFCRA in part to address gaps under existing leave law, albeit only temporarily - it expires in December 2020. FFCRA § 5109. The FFCRA's sick leave provision (the "Emergency Paid Sick Leave Act") provides for 80 hours of sick leave for full time workers -- the equivalent of two weeks.  Part time workers are eligible for two weeks of sick leave hours based on their usual schedule. FFCRA § 5102(b)(2)(B).
+
+To be eligible for FFCRA sick leave, workers need not complete a probationary period.  It is immediately available to everyone working for a covered employer. (However, employees seeking a longer leave for school closures under the expanded FMLA would need to have worked for the company for at least 30 days. FFCRA § 3102.)  Employers must offer FFCRA sick leave in addition to any sick leave available under the employer's policy or state law. FFCRA § 5102(e)(2)(B).  Permissible reasons for using the leave include government-ordered quarantine or isolation; self-isolation at the instruction of a health care provider; and sickness due to apparent COVID-19 symptoms, provided the employee seeks a medical diagnosis. FFCRA § 5102(a).
+
+While on FFCRA sick leave, workers can receive their full pay -- up to $511 per day -- which is funded through a payroll tax credit. FFCRA § 7001.  For workers who ordinarily earn more than \$511 per day, employers can opt to subsidize the remainder at their own expense. [CARES Act, Pub. L. No. 116-136, § 3602 134 Stat. 281, 410 (2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  
+
+Employees can also use sick leave to care for a child whose school has closed or a person sick with COVID-19 or self-isolating. FFCRA § 5012(a).  Payment for workers using sick leave for caregiving is limited to 2/3 of the worker's usual pay (but no less than the state or local minimum wage), up to $200 per day -- unless the employer elects to subsidize additional wages.
+
+The FFCRA also temporarily amends the FMLA to allow up to 12 weeks of caregiving related to school closures. FFCRA § 5012(a).  Like the sick leave provision, the family leave provision enables workers to receive partial pay for 10 weeks of the leave, at 2/3 the worker's usual pay (but no less than the state or local minimum wage) of up $200 per day. FFCRA § 5110(5)(B); CARES Act § 3602.  Employers can require workers to use any sick or vacation time they have accrued under the employer's policy while they are on leave. [29 C.F.R. § 826.23(c)](https://www.ecfr.gov/cgi-bin/text-idx?SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&node=se29.3.826_123&rgn=div8).
+
+The sick leave provisions and FFCRA provisions work together, so that an employee whose child's school is closed can use both sick leave and the family leave provision at once. The employee would be paid under the sick leave law for the first two weeks of family leave, and then the remaining 10 weeks under the family leave provision. [29 C.F.R. § 826.60](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&n=pt29.3.826&r=PART&ty=HTML#se29.3.826_160). The FFCRA does not offer sick leave beyond two weeks, forcing workers to rely on the original FMLA for COVID-related illness thereafter.
+
+While the leave available under the FFCRA represents a substantial expansion compared to previous law, it may be insufficient given the long-term nature of the pandemic and  barriers to health care access.  Twelve weeks of family leave won’t cover parents contending with school closures that last for 6 months or longer.  Likewise, the two week limitation on sick leave is only enough for workers to complete a single quarantine period.  If they are exposed to the virus a second or third time, they would not have enough leave for further quarantines.
+
+In addition, the sick leave provisions assume that workers have access to health care.  The FFCRA only authorizes self-isolation at the instruction of a health care provider.  FFCRA § 5102. Likewise, those experiencing COVID symptoms must be in the process of seeking a medical diagnosis to use the leave.  [29 C.F.R. § 826.20](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&n=pt29.3.826&r=PART&ty=HTML#se29.3.826_160).  A sick employee without affordable access to health care may decide to return to work and spread the virus to others.
+
+## Coverage Gaps
+
+The FFCRA has several coverage gaps.  Some are attributable to legislative compromises. Others arise from how the DOL interprets the law, which has been successfully challenged in court.
+
+First, the FFCRA covers about 47 million workers, or about 30% of the U.S. workforce [@DOL2020r, 19343].  Although the original draft of the bill covered all employers, H.R. 6201, Division D, the final version excluded the nation's largest employers -- those with 500 or more employees. FFCRA § 5110. This carve out excluded 59 million workers from coverage - about 47% of the workforce [@BLS2019_tblF]. Legislators did not explain why they included this carve out.
+
+Second, companies with fewer than 50 employees can decline to provide leave if it would "jeopardize the viability of the business as a going concern" -- meaning that its expenses would exceed revenues to such an extent that it would "cease operating at a minimal capacity." [29 C.F.R. § 826.40(b)(1)(i)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&n=pt29.3.826&r=PART&ty=HTML#se29.3.826_140).  This hardship exemption also allows companies to deny leave to workers whose absence would "entail a substantial risk to the financial health or operational capabilities of the business" or where it would deprive the business of "sufficient workers . . . to perform the labor or services . . . needed for the small business to operate at a minimal capacity." [29 C.F.R. § 826.40(b)(1)(ii),(iii)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&n=pt29.3.826&r=PART&ty=HTML#se29.3.826_140).
+
+Third, the FFCRA provides that an "employer of an employee who is a health care provider or an emergency responder" may exclude "such employee" from the FFCRA's paid leave provision. FFCRA § 3105. The DOL originally interpreted this exclusion very broadly to include any worker whose employer might qualify as a "health care provider." 29 C.F.R. § 826.30(c) (2020). However, the State of New York successfully challenged this interpretation in court. [State of New York v. U.S. Dept. of Labor, No. 20-CV-3020, 2020 WL 4462260 (S.D.N.Y., Aug. 3, 2020)](https://nysd.uscourts.gov/sites/default/files/2020-08/State%20of%20New%20York%20v.%20United%20States%20Department%20of%20Labor%20et%20al%2C%2020-cv-3020%20%28JPO%29.pdf). This led the DOL to revise its regulations to interpret the term "health care provider" to refer to the job duties of individual employees, such as doctors, nurses and laboratory technicians – a much narrower interpretation [@DOL2020r2].
+
+Fourth, the DOL has interpreted the FFCRA to limit the circumstances under which workers can use the leave. The statute provides that workers may take sick leave if "subject to a federal, state, or local quarantine or isolation order related to COVID-19." FFCRA § 5102.  The DOL acknowledges that this includes stay-at-home orders and lockdowns adopted in many states, but insists that business or pandemic-related closures render a worker ineligible for leave, because the worker's unavailability was not a "but for" cause of the leave. [29 C.F.R. § 826.20(a)(2)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=1035c4294d6968b002f8cc837ff5ab78&mc=true&n=pt29.3.826&r=PART&ty=HTML#se29.3.826_120).  For example, an employee stuck at home due to a school closure would become ineligible for leave if his workplace also closed due to a lock down or business slowdown [@DOL2020r, 19329]. This DOL "but-for" cause requirement likely and substantially limited the FFCRA's usefulness at the height of the lockdowns in April 2020. 
+
+The federal district court in New York subsequently held that the DOL did not adequately justify its stance on causation. The court reasoned that several factors might contribute to an employee's absence without destroying causation: "For example . . . a teacher on paid parental leave may still be considered on 'leave' even if school is called off for a snow day." New York v. U.S. Dept of Labor, at 15.  In revised regulations, the DOL declined to alter its original stance on causation, instead offering further justification for its interpretation [@DOL2020r2, 57679-57681].
+
+The FFCRA’s many limitations hampered its effectiveness, both in protecting workers from economic harm and as a public health intervention.  Workplaces have been the source of many COVID-19 outbreaks [e.g., @KGW2020], an outcome that might have been mitigated with a more flexible and universal leave law.
+
+# References
+

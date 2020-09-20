@@ -1,16 +1,14 @@
 # About the Contributors {-}
 
-David Doorey is an Associate Professor of Work Law at [York University](https://profiles.laps.yorku.ca/profiles/ddoorey/).
-
 Michael C. Duff is a Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
 
-Jeffrey M. Hirsch is the Geneva Yeargan Rand Distinguished Professor of Law at the University of North Carolina.
+Jeffrey M. Hirsch is the Geneva Yeargan Rand Distinguished Professor of Law at the [University of North Carolina](https://law.unc.edu/people/jeffrey-m-hirsch/).
 
 Anthony Forsyth[`r icon::ai("orcid")`](https://orcid.org/0000-0003-0790-8524) is a Professor in the Graduate School of Business and Law at RMIT University, Australia.
 
 Sachin S. Pandya[`r icon::ai("orcid")`](http://orcid.org/0000-0001-7387-1307) is a Professor of Law at the University of Connecticut.
 
-Elizabeth Pendo is the Joseph J. Simeone Professor of Law at Saint Louis University.
+Elizabeth Pendo is the Joseph J. Simeone Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/elizabeth-pendo.php).
 
 Elizabeth Tippett is an Associate Professor of Law at the [University of Oregon](https://law.uoregon.edu/people/faculty/tippett).
 

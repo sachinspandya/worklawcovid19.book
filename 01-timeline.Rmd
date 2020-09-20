@@ -1,0 +1,27 @@
+# Timeline {#timeline}
+
+The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 2020, it had spread to virtually everywhere on Earth. On March 11, 2020, the World Health Organization declared COVID-19 a pandemic [@WHO2020]. By that point, COVID-19 had hit the United States.  When it did, it shocked the system of workplace and labor market regulation in the United States. Unemployment skyrocketed. Workplaces became sites of infection risk and, in some cases, protest and litigation about that risk.
+
+## United States - Key Events
+
+In response, in March and April 2020, Congress passed three key pieces of legislation: the Families First Coronavirus Response Act, the CARES Act, and the Paycheck Protection Program.
+
+```{r UI_timeline, echo=FALSE}
+
+library(timevis)
+
+timeline_data <- data.frame(
+  id      = 1:5,
+  content = c("WHO declares pandemic",
+		      "Families First Act", 
+			  "CARES Act",
+			  "FPUC = $600/week",
+			  "Paycheck Protection Act"
+			  ),
+  start   = c("2020-03-11","2020-03-18", "2020-03-27", "2020-03-27","2020-04-24"),
+  end     = c(NA,NA, NA, "2020-07-31", NA)
+)
+
+timevis(timeline_data)
+
+```
