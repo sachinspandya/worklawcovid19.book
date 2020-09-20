@@ -1,6 +1,6 @@
 # (PART) Caregiving {-} 
 
-# Work and Caregiving during COVID-19"
+# Work and Caregiving during COVID-19
 
 _Deborah A. Widiss_, 2020-09-17
 
@@ -61,8 +61,7 @@ pl_plot <- ggplot(data = d2, aes(fill=quartile, y=pct, x=type)) +
                 )
 
 pl_plot <- pl_plot + 
-           guides(fill=guide_legend(title="Average\nwage level\nby quartile")) +
-		   scale_fill_brewer(palette="Greens")
+           guides(fill=guide_legend(title="Average\nwage level\nby quartile")) +                  scale_fill_brewer(palette="Greens")
 
 pl_plot
 
@@ -78,8 +77,8 @@ Whatever employer policies provide, some laws guarantee paid time off for certai
 #www.abetterbalance.org/paid-sick-time-laws/; 
 #www.ncsl.org/research/labor-and-employment/paid-sick-leave.aspx 
 
-#load_path <- here::here("data","state_leave_laws_2020-08-21.csv")
-load_path <- "state_leave_laws_2020-08-21.csv"
+load_path <- here::here("data","state_leave_laws_2020-08-21.csv")
+#load_path <- "state_leave_laws_2020-08-21.csv"
 
 d <- readr::read_csv(load_path)
 
@@ -117,7 +116,7 @@ Paid sick day laws can help with short-term needs related to COVID-19. They do n
 
 The second group of laws, family and medical leave laws, address longer-term absences. The federal Family and Medical Leave Act (FMLA) requires employers to provide up to 12 weeks of unpaid, job-protected leave to care for a spouse, son, daughter, or parent with a "serious health condition." [29 U.S.C. §  2612(a)(1)(C)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2612.htm); [29 C.F.R. § 825.112(a)(3)](https://www.ecfr.gov/cgi-bin/text-idx?SID=37e96589d012f4345da3582b7493ae24&mc=true&node=se29.3.825_1112&rgn=div8). (The FMLA also requires leave to address an employee's own serious health condition, to care for a new child, and for certain military-related care needs.) The permanent provisions of the FMLA only apply to workplaces with at least 50 employees, and employees who have worked at least 1250 hours (about 25 hours per week) for the employer in the prior year. [29 U.S.C. § 2611](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap28-subchapI-sec2611.htm). These restrictions exclude about 40% of the private sector workforce [@Klerman2014]. 
 
-Even if an employee qualifies for FMLA leave, the permanent provisions of the FMLA address only some COVID-related caregiving needs. The FMLA regulations define "serious health condition" as a condition that causes an incapacity to work and requires either inpatient care in a hospital or continuing treatment by a health care provider. [29 C.F.R. § 825.113](https://www.ecfr.gov/cgi-bin/text-idx?SID=7fb26651da323c8e88f516274232d90b&mc=true&node=se29.3.825_1113&rgn=div8). A COVID-19 case that requires hospitalization or is gravely debilitating would meet this standard. A relatively mild case is less likely to qualify; the flu and colds typically do not unless they involve complications. 29 C.F.R. § 825.113(d). However, if a patient were instructed by her doctor or applicable public health orders to quarantine, and thus could not work or attend school for several days, that might satisfy the incapacity requirements. According to the U.S. Department of Labor, the FMLA does not provide leave to take care of healthy children, even if they are home because of school or childcare closures [@DOL2020]. FMLA leave is also unpaid. Many workers cannot afford to be home for very long without a paycheck. (Temporary COVID-specific provisions modify some of the coverage restrictions and offer short-term partially paid leaves for certain purposes. See Chap. 6.)
+Even if an employee qualifies for FMLA leave, the permanent provisions of the FMLA address only some COVID-related caregiving needs. The FMLA regulations define "serious health condition" as a condition that causes an incapacity to work and requires either inpatient care in a hospital or continuing treatment by a health care provider. [29 C.F.R. § 825.113](https://www.ecfr.gov/cgi-bin/text-idx?SID=7fb26651da323c8e88f516274232d90b&mc=true&node=se29.3.825_1113&rgn=div8). A COVID-19 case that requires hospitalization or is gravely debilitating would meet this standard. A relatively mild case is less likely to qualify; the flu and colds typically do not unless they involve complications. 29 C.F.R. § 825.113(d). However, if a patient were instructed by her doctor or applicable public health orders to quarantine, and thus could not work or attend school for several days, that might satisfy the incapacity requirements. According to the U.S. Department of Labor, the FMLA does not provide leave to take care of healthy children, even if they are home because of school or childcare closures [@DOL2020]. FMLA leave is also unpaid. Many workers cannot afford to be home for very long without a paycheck. (Temporary COVID-specific provisions modify some of the coverage restrictions and offer short-term partially paid leaves for certain purposes. See Chap. X.)
 
 Some states offer more robust support by guaranteeing _paid_ leave for similar purposes as the FMLA provides unpaid leave. As of September 2020, eight states, and the District of Columbia, have such family and medical leave laws; approximately one quarter of Americans live in a state with a paid leave law [@Widiss2020]. Typically funded by a small payroll tax, they generally offer employees between 60% and 100% of regular wages, up to a cap set at the median state wage. 
 
@@ -144,3 +143,6 @@ Women typically bear a disproportionate share of the caregiving burden, even if 
 The caregiving challenges caused by COVID are likely to persist or worsen, particularly since many schools are operating remotely in fall 2020. Workers are, quite simply, being stretched too thin. The likely result will be that many women, and some men, will decide to leave the workforce. This will cause significant financial hardship to many families, and it will widen gender gaps in earnings and retirement security. Parents who can't afford to quit working, particularly single parents, may have to rely on inadequate and unstable childcare arrangements, or simply leave kids home alone.
 
 There is, however, a glimmer of hope. Although women are doing a greater share of caregiving, men are also shouldering enhanced responsibilities [e.g. @Krentz2020]. Fathers may remain more involved even when the crisis subsides. The pandemic has also spotlighted how essential childcare, schools, and adult care facilities are for a productive workforce. This has bolstered public support for policies such as paid family leave and universal childcare. Already, a few states have responded to the COVID crisis by enacting permanent leave provisions. E.g., [SB 20-205 ](https://leg.colorado.gov/sites/default/files/2020a_205_signed.pdf) (Colorado). If this trend continues, the pandemic could spur more general legislative reform that could help families better balance work and caregiving needs, both now and in the future.
+
+# References
+

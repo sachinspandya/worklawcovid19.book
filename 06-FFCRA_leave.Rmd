@@ -1,15 +1,4 @@
----
-title: "Paid Leave under The Families First Coronavirus Response Act"
-subtitle: "A Stopgap Leave Law with its own Gaps"
-output:
-    word_document
-#    html_document:
-#    theme: readable
-#    number_sections: true
-bibliography: references_Tippett.bib
-#biblio-style: apalike
-link-citations: yes
----
+# Paid Leave under The Families First Coronavirus Response Act: A Stopgap Leave Law with its own Gaps
 
 _Elizabeth C. Tippett_, 2020-09-15
 
@@ -60,6 +49,3 @@ Fourth, the DOL has interpreted the FFCRA to limit the circumstances under which
 The federal district court in New York subsequently held that the DOL did not adequately justify its stance on causation. The court reasoned that several factors might contribute to an employee's absence without destroying causation: "For example . . . a teacher on paid parental leave may still be considered on 'leave' even if school is called off for a snow day." New York v. U.S. Dept of Labor, at 15.  In revised regulations, the DOL declined to alter its original stance on causation, instead offering further justification for its interpretation [@DOL2020r2, 57679-57681].
 
 The FFCRA’s many limitations hampered its effectiveness, both in protecting workers from economic harm and as a public health intervention.  Workplaces have been the source of many COVID-19 outbreaks [e.g., @KGW2020], an outcome that might have been mitigated with a more flexible and universal leave law.
-
-# References
-
