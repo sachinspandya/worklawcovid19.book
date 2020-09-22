@@ -1,3 +1,5 @@
+# (PART\*) Immigrants {-} 
+
 # Undocumented Worker Relief {#undocumented}
 
 _Sachin S. Pandya_, 2020-09-17
@@ -52,7 +54,7 @@ What about the other $63.3 million, which came from a seperate legislative appro
 
 In early May 2020, the California Supreme Court denied the petition in _Benitez_. [Order, Benitez v. Newsom (Cal., May 6, 2020)](https://appellatecases.courtinfo.ca.gov/documents/s261804-order-050620.pdf). The lawsuit in *Crest* is still pending.
 
-The Fund's application window opened on May 18, 2020 and closed on June 30, 2020. By July 1, 2020, the Fund had received 150,000 applications for benefits; approved 104,830 of them (about 70%); and disbursed about \$43 million Statewide [@CADSS2020].  By August 27, 200, the Fund had disbursed 150,000 prepaid cards in amounts totalling \$75 million [@CADSS2020a].
+The Fund's application window opened on May 18, 2020 and closed on June 30, 2020. By July 1, the Fund had received 150,000 applications for benefits; approved 104,830 of them (about 70%); and disbursed about \$43 million Statewide [@CADSS2020].  By August 27, the Fund had disbursed 150,000 prepaid cards in amounts totalling \$75 million [@CADSS2020a].
 
 ### Oregon
 
