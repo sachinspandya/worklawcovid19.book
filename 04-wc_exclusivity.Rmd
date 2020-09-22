@@ -28,7 +28,7 @@ Plaintiffs may also file wrongful death suits in hopes that courts will disregar
 
 ## Exclusivity and Public Nuisance Suits
 
-Plaintiffs have also filed public nuisance tort suits as an apparent strategy to compel employers to make workplaces safer from COVID-19 [@Gurrieri2020]. A public nuisance is "an unreasonable interference with a right common to the general public." Restatement (Second) of Torts $\S$ 821B(1) (1979). An interference is unreasonable if it significantly affects the public health, the public safety, the public peace, the public comfort, or the public convenience. Id. $\S$ 821B(2).
+Plaintiffs have also filed public nuisance tort suits as an apparent strategy to compel employers to make workplaces safer from COVID-19. A public nuisance is "an unreasonable interference with a right common to the general public." Restatement (Second) of Torts $\S$ 821B(1) (1979). An interference is unreasonable if it significantly affects the public health, the public safety, the public peace, the public comfort, or the public convenience. Id. $\S$ 821B(2).
 
 Maintaining businesses not in compliance with COVID-19 safety protocols seems to fall within the definition. Tort law has traditionally carefully limited public nuisance liability. Even if the general public suffers harm, individual plaintiffs may bring private actions for public nuisance only if they have suffered a special injury, i.e., a "harm of a kind different from that suffered by other members of the public exercising the right common to the general public that was the subject of interference." Restatement (Second) of Torts $\S$ 821C. Usually, plaintiffs not eligible for tort damages also may not obtain tort injunctions. Id. $\S$ 821C, comment j.
 

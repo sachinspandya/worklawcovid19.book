@@ -1,4 +1,4 @@
-# (PART) Disability {-} 
+# (PART\*) Disability {-} 
 
 # COVID-19 Screening, Remote Work, and Disability Law
 
@@ -55,5 +55,3 @@ To illustrate, suppose an employee asks for remote work as a reasonable accommod
 Expanded remote work policies may greatly benefit workers with disabilities, among others [@Stengel2020].  But many jobs cannot be done remotely. An estimated 26% of workers continue to work on premises [@Bloom2020, 2]. Managers, professionals, and administrative support workers are most likely to be able to work remotely, while many employees in service, construction, transportation, and production jobs are unable to perform their jobs off-site [@Bloom2020, 2; @Dey2020].
       
 In addition, the ADA does not require employers to provide accommodations to employees who are at increased risk of COVID-19 due to a reason other than disability (such as age or ordinary pregnancy) or to non-disabled employees who are in close contact with someone at increased risk due to disability (such as a child with an underlying medical condition). Other federal laws prohibit workplace discrimination based on other characteristics, such as age, [29 U.S.C. $\S$ 623](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap14-sec623.htm), or pregnancy, [42 U.S.C. $\S$ 2000e(k)](https://www.govinfo.gov/content/pkg/USCODE-2018-title42/html/USCODE-2018-title42-chap21-subchapVI-sec2000e.htm) [@EEOC2020a]. 
-
-# References

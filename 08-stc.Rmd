@@ -1,8 +1,6 @@
 # Short-Time Compensation {#stc}
 
--Sachin S. Pandya_, 2020-09-13
-
-## Background
+_Sachin S. Pandya_, 2020-09-13
 
 In the U.S., Short-Time Compensation ("STC") refers to programs adopted by some State unemployment insurance systems to encourage employers can keep employing workers during economic downturns by reducing their hours rather than laying them off [@Whittaker2016]. Under an STC program, if an employer reduces worker hours in lieu of layoffs, the State will pay those workers with pro-rated unemployment insurance benefits to cover part of what those workers lose in pay by working fewer hours.
 
@@ -19,13 +17,11 @@ To be approved, the U.S. employer's STC plan must show that the affected employe
 
 Individuals receiving STC payments must meet the UI availability for work and work search test requirements by being available for their workweek as required by state law. [26 U.S.C. $\S$ 3306(v)(5)](https://www.govinfo.gov/content/pkg/USCODE-2018-title26/html/USCODE-2018-title26-subtitleC-chap23-sec3306.htm). Moreover, the employer STC plan must provide that employers will maintain (to the same extent as for other employees not part of the STC plan) certain specified health benefits and retirement benefits for the affected employees in the affected unit, despite their reduced hours. 26 U.S.C. $\S$ 3306(v)(7).
 
-## CARES Act and STC Programs  
+When Congress enacted the CARES Act, it authorized 100% federal financing of STC in states with existing STC programs and 50% federal financing for states that set up STC programs (up to the equivalent of 26 weeks of benefits for individuals) through the end of December 2020. The CARES Act also provided for Federal Pandemic Unemployment Compensation (FPUC) - additional $600 in payments to UI claimants who met certain qualifying criteria.  This additional \$600 applied to STC payments as well, so that the employee working reduced hours was eligible for the full \$600 in FPUC _on top of_ their STC benefits [@UIPL15-20, I-5].
 
-When Congress enacted the CARES Act, it authorized 100% federal financing of STC in states with existing STC programs and 50% federal financing for states that set up STC programs (up to the equivalent of 26 weeks of benefits for individuals) through the end of December 2020. The CARES Act also provided for Federal Pandemic Unemployment Compensation (FPUC) - additional $600 in payments to UI claimants who met certain qualifying criteria.  This additional \$600 applied to STC payments as well, so that the employee working reduced hours was eligible for the full \$600 in FPUC _on top of_ their STC benefits. [UI Program Letter 15-20](https://wdr.doleta.gov/directives/attach/UIPL/UIPL_15-20.pdf).
+Thereafter, the number of employers with STC plans appears to have increased in most States with STC programs (Figure 1).
 
-Thereafter, the number of employers with STC plans appears to have increased in most States with STC programs (Figure \@ref(fig:stc_fig)).
-
-```{r stc_fig, warning=FALSE, echo=FALSE, message = FALSE, cache = TRUE, fig.cap = "Change in STC-enrolled Employers by State"}
+```{r stc_fig, echo=FALSE, eval=FALSE}
 
 library(tidyverse)
 
@@ -67,12 +63,20 @@ anim <- staticplot +
         caption = "Source: USDOL ETA 5159") + 
   theme(axis.title.x=element_blank())
 
-stc_gif <- animate(anim, nframes = 80, end_pause = 20, rewind = F, renderer = 
-       gifski_renderer())
+#stc_gif <- animate(anim, nframes = 80, end_pause = 20, rewind = F, renderer = gifski_renderer())
 
-stc_gif
+#stc_gif
 
 ```
 
-On July 31, 2020, the FPUC $600 weekly payments expired. 
+
+```{r stc_figf, warning=FALSE, echo=FALSE, message = FALSE}
+
+load_path <- here::here("figures_final","stc_fig-1.gif")
+knitr::include_graphics(load_path)
+
+```
+
+
+On July 31, 2020, the FPUC $600 weekly payments expired.
 
