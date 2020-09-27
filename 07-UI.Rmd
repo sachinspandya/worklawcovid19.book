@@ -1,6 +1,6 @@
 # (PART\*) Unemployment {-} 
 
-# Unemployment Insurance
+# Unemployment Insurance {#ui}
 
 _Sachin S. Pandya_, 2020-09-13
 
@@ -12,10 +12,10 @@ In the US, there are 53 sets of UI eligibility rules-- one for each State, plus 
 
 Typically, an applicant for UI must leap over several eligibility hurdles to receive benefits. You typically need to have earned a minimum amount from work during a year-long period prior to when you apply for UI. And you must have left your prior job involuntarily ("involuntary separation"). That means that States can deny benefits for (1) voluntarily quitting without a good enough reason ("good cause"); (2) discharge due to job-related misconduct, (3) unemployment because of a labor dispute, and (4) your fraud to get or increase benefits [@DOL2019, chap. 5].
 
-If you are eligible, the UI weekly benefit amount is typically some function (which varies by State) of your past wages in a "base period" of time (typically the first four of the last five completed calendar quarters) [@DOL_sigUI2020, cols. 2-4].
+If you are eligible, the UI weekly benefit amount is typically some function of your past wages in a "base period" of time -- typically the first four of the last five completed calendar quarters -- as adjusted by minimum and maximum benefit amounts, which vary a lot by State [Figure \@ref(fig:wklybnft); @DOL_sigUI2020, cols. 2-4].
 
 
-```{r wkly_bnft, echo=FALSE, message=FALSE}
+```{r wklybnft, echo=FALSE, message=FALSE, fig.cap = "Min/Max UI Weekly Benefits by State, January 2020"}
 
 # https://oui.doleta.gov/unemploy/content/sigpros/2020-2029/January2020.pdf
 
@@ -44,9 +44,9 @@ dotplot <- ggplot(d2, aes(x = amount, y = reorder(state, amount))) + geom_line(a
         legend.background = element_blank(),
         legend.direction="horizontal") + 
   labs(
-      title = "State UI Weekly Benefits by State: Min and Max as of January 2020",
-      subtitle = " ",
-      caption = "Source: DOL"
+      title = "State UI Weekly Benefits by State",
+      subtitle = "Min and Max as of January 2020",
+      caption = "Source: Department of Labor (2020a)"
       )
 
 dotplot
@@ -68,23 +68,13 @@ When Congress passed the Families First Coronavirus Response Act in mid-March 20
 
 Thereafter, some States have adopted additional COVID-19 modifications to their UI law. For example, in August 2020, the Nevada legislature directed its UI agency to "establish justifications related to COVID-19 that may constitute good cause for a  person to refuse suitable work," and provided a non-exhaustive list of such justifications. [Nevada, SB3 § 15 (Aug. 6, 2020)](https://www.leg.state.nv.us/App/NELIS/REL/32nd2020Special/Bill/7155/Text).
 
-## Federal Pandemic Unemployment Compensation {#fpuc}
+## Federal Pandemic Unemployment Compensation {#puc}
 
-Thanks to the CARES Act, enacted March 28, 2020, certain workers became eligible for Federal Pandemic Unemployment Compensation (FPUC) --  an additional $600 per week for weeks of unemployment ending on or before July 31, 2020, on top of what they could get in State UI benefits.  To get FPUC, workers had to self-certify that they were "otherwise able to work and available for work" under their State's UI law, but they were "unemployed, partially unemployed, or unable or unavailable to work," CARES Act § 2102(a)(3)(A)(ii)(I), because of one of several qualifying conditions.
-
-Such qualifying conditions included that the individual is caring for a family or household member diagnosed with COVID-19, or primarily cares for a child who can't attend school "as a direct result of the COVID–19 public health emergency" and such school is required for the individual to work. See CARES Act § 2102(a)(3)(A)(ii)(I)(aa)-(hh). Other qualifying conditions included:
-
-> (ii) the individual has to quit his or her job as a direct result of COVID-19;
-
-> (jj) the individual's place of employment is closed as a direct result of the COVID-19 public health emergency; or
-
-> (kk) the individual meets any additional criteria established by the Secretary for unemployment assistance under this section.
-
-CARES Act § 2102(a)(3)(A)(ii)(I). Workers were ineligible for FPUC if they "telework with pay" or are receiving "paid sick leave or other paid leave benefits." CARES Act § 2102(3)(B).
+Thanks to Title II(A) of the [CARES Act, Pub. L. No. 116-136, § 2104, 134 Stat. 281, 319](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml) (enacted March 2020), certain workers became eligible for Federal Pandemic Unemployment Compensation (FPUC) --  an additional $600 per week for weeks of unemployment ending on or before July 31, 2020, on top of what they could get in State UI benefits. 
 
 Congress initially settled on the flat $600 FPUC amount in the CARES Act, rather than making the FPUC amount depend on a claimant's total weekly UI payment under State law. A plausible reason for a _flat_ amount: it is harder for States to rewrite the software of their antiquated UI claims processing computer systems to implement a FPUC that varied by a claimant's prior wages during their "base period". Adding a flat amount is a lot easier. 
 
-About a decade earlier, in 2009, 90% of State UI agencies had reported that their benefits or tax systems ran on old hardware and software programming languages, such as COBOL (average age of State UI benefits I.T. system = 22 years) [@NASWA2010, 2]. A decade later, most UI claims in 2019 were filed via the Internet, though in some States (e.g, Kansas, Vermont), many still filed by phone [@DOLfiling]. When the CARES Act passed, State UI agencies could not immediately begin processing and paying out FPUC benefits. Some States, such as New Jersey and Connecticut, put out the call for COBOL programmers to help them rewrite their code, while others put more blame for delay on aging hardware [@Botella2020]. Rhode Island, in contrast, bypassed its legacy system and, within ten days after the CARES Act, built and deployed a seperate cloud-based system for collecting, validating, and paying FPUC claims [@Angell2020].
+About a decade earlier, in 2009, 90% of State UI agencies had reported that their benefits or tax systems ran on old hardware and software programming languages, such as COBOL (average age of State UI benefits I.T. system = 22 years) [@NASWA2010, 2]. A decade later, most UI claims in 2019 were filed via the Internet, though in some States (e.g, Kansas, Vermont), many still filed by phone [@DOLfiling]. When the CARES Act passed, State UI agencies could not immediately begin processing and paying out FPUC benefits. Some States, such as New Jersey and Connecticut, put out the call for COBOL programmers to help them rewrite their code, while others argued that aging hardware or years of understaffing, not COBOL, was really to blame [@Botella2020; @Hicks2020]. Rhode Island, in contrast, bypassed its legacy system and, within ten days after the CARES Act, built and deployed a separate cloud-based system for collecting, validating, and paying FPUC claims [@Angell2020].
 
 ```{r FPUC, eval=FALSE, echo=FALSE}
 
@@ -128,12 +118,41 @@ fpuc_plot <- ggplot(d,aes(x = fpuc, y = reorder(stateab,fpuc),
 
 fpuc_plot
 
-save_path <- here::here("figures_final")
-ggsave("fpuc_plot.png", path = save_path)
+#save_path <- here::here("figures_final")
+#ggsave("fpuc_plot.png", path = save_path)
 
 ```
 
+By July 2020, the flat \$600 FPUC amount was still politically controversial. Some politicians complained that the $600 amount was too large, because in some cases, the total weekly UI benefit exceeded wage replacement, i.e., what what they would have received in weekly wages had they gone back to work. Research at the time, however, found little evidence that high UI amounts affected return to work [@Bartik2020; @Altonji2020]. As politicians debated, DOL asked state workforce agencies (which administer State UI programs), in a July 13 survey from DOL's UI Administrator, how long it would take to implement a revised FPUC tied to a claimant's past wages, adding “I know from our conversations with a number of you that these are heavy lifts, and we want to be able to quantify that appropriately.”[quoted in @Penn2020]
 
-By July 2020, the flat \$600 FPUC amount -- set to expire on July 31 -- was still politically controversial. Some politicians complained that the $600 amount was too large, because in some cases, the total weekly UI benefit exceeded wage replacement, i.e., what what they would have received in weekly wages had they gone back to work. Research at the time, however, found little evidence that high UI amounts affected return to work [@Bartik2020; @Altonji2020]. As politicians debated, DOL asked state workforce agencies (which administer State UI programs), in a July 13 survey from DOL's UI Administrator, how long it would take to implement a revised FPUC tied to a claimant's past wages, adding “I know from our conversations with a number of you that these are heavy lifts, and we want to be able to quantify that appropriately.”[quoted in @Penn2020]
+The \$600 FPUC provision of the CARES Act only applied to "weeks of unemployment . . . ending on or before July 31, 2020." CARES Act § 2104(e).  Accordingly, for individuals getting UI payments for weeks of unemployment past July 31, those individuals did not get any FPUC amount.
 
-On July 31, 2020, the \$600 FPUC provision of the CARES Act expired.
+## Federal Pandemic Unemployment Assistance {#pua}
+
+THe CARES Act also separately provided a Pandemic Unemployment Assistance benefit (PUA) for someone who wasn't eligible for regular or extended UI benefits under State or Federal law, including someone who had "exhausted" those benefits. [CARES Act § 2102(a)(3)(A)(i)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  If you qualified for PUA, you would get a weekly amount equal to the State UI amount _plus_ the flat FPUC amount that you would have been otherwise entitled to receive. CARES Act § 2102(d).  Because the FPUC only covers weeks of unemployment up through July 31, 2020, the PUA amounts for weeks thereafter are \$600 less.  
+
+To qualify for PUA, workers had to self-certify that they were "otherwise able to work and available for work" under their State's UI law, but they were "unemployed, partially unemployed, or unable or unavailable to work because" of one of several qualifying conditions. CARES Act § 2102(a)(3)(A)(ii)(I).
+
+Such qualifying conditions included that the individual is caring for a family or household member diagnosed with COVID-19. CARES Act § 2102(a)(3)(A)(ii)(I)(aa)-(cc).
+
+Another PUA qualifying condition is that 
+
+>a child or other person in the household for which the individual has primary caregiving responsibility is unable to attend school or another facility that is closed as a direct result of the COVID–19 public health emergency and such school or facility care is required for the individual to work;
+
+CARES Act § 2102(a)(3)(A)(ii)(I)(dd). The Department of Labor treats a school as "closed" even if the school system is only providing online instruction _or_ a combination of online and in-person instruction, because the students cannot be physically present at the school on the days of online instruction. But if the school lets the individual seeking PUA choose between full-time in-person instruction and remote learning, the school doesn't count as "closed" [@UIPL1620].
+
+Other PUA qualifying conditions include:
+
+>  (ii) the individual has to quit his or her job as a direct result of COVID-19;
+
+>  (jj) the individual's place of employment is closed as a direct result of the COVID-19 public health emergency; or
+
+>  (kk) the individual meets any additional criteria established by the Secretary for unemployment assistance under this section.
+
+CARES Act § 2102(a)(3)(A)(ii)(I). 
+
+An individual is eligible for PUA even if self-employed, seeking only part-time employment, lacked sufficient work history, "or otherwise would not qualify for" regular or extended UI benefits under State or Federal law. CARES Act § 2102(a)(3)(A)(ii)(II). 
+
+Workers are ineligible for PUA, however, if they could "telework with pay" or are receiving "paid sick leave or other paid leave benefits." CARES Act § 2102(3)(B).
+
+PUA benefits only cover "weeks of unemployment, partial unemployment, or inability to work caused by COVID–19" up through December 31, 2020. CARES Act § 2102(c)(1)(A).
