@@ -68,7 +68,7 @@ When Congress passed the Families First Coronavirus Response Act in mid-March 20
 
 Thereafter, some States have adopted additional COVID-19 modifications to their UI law. For example, in August 2020, the Nevada legislature directed its UI agency to "establish justifications related to COVID-19 that may constitute good cause for a  person to refuse suitable work," and provided a non-exhaustive list of such justifications. [Nevada, SB3 § 15 (Aug. 6, 2020)](https://www.leg.state.nv.us/App/NELIS/REL/32nd2020Special/Bill/7155/Text).
 
-## Federal Pandemic Unemployment Compensation {#puc}
+## PUC: Pandemic Unemployment Compensation {#puc}
 
 Thanks to Title II(A) of the [CARES Act, Pub. L. No. 116-136, § 2104, 134 Stat. 281, 319](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml) (enacted March 2020), certain workers became eligible for Federal Pandemic Unemployment Compensation (FPUC) --  an additional $600 per week for weeks of unemployment ending on or before July 31, 2020, on top of what they could get in State UI benefits. 
 
@@ -127,9 +127,9 @@ By July 2020, the flat \$600 FPUC amount was still politically controversial. So
 
 The \$600 FPUC provision of the CARES Act only applied to "weeks of unemployment . . . ending on or before July 31, 2020." CARES Act § 2104(e).  Accordingly, for individuals getting UI payments for weeks of unemployment past July 31, those individuals did not get any FPUC amount.
 
-## Federal Pandemic Unemployment Assistance {#pua}
+## PUA: Pandemic Unemployment Assistance {#pua}
 
-THe CARES Act also separately provided a Pandemic Unemployment Assistance benefit (PUA) for someone who wasn't eligible for regular or extended UI benefits under State or Federal law, including someone who had "exhausted" those benefits. [CARES Act § 2102(a)(3)(A)(i)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  If you qualified for PUA, you would get a weekly amount equal to the State UI amount _plus_ the flat FPUC amount that you would have been otherwise entitled to receive. CARES Act § 2102(d).  Because the FPUC only covers weeks of unemployment up through July 31, 2020, the PUA amounts for weeks thereafter are \$600 less.  
+The CARES Act also separately provided a Pandemic Unemployment Assistance benefit (PUA) for someone who wasn't eligible for regular or extended UI benefits under State or Federal law, including someone who had "exhausted" those benefits. [CARES Act § 2102(a)(3)(A)(i)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  If you qualified for PUA, you would get a weekly amount equal to the State UI amount _plus_ the flat FPUC amount that you would have been otherwise entitled to receive. CARES Act § 2102(d).  Because the FPUC only covers weeks of unemployment up through July 31, 2020, the PUA amounts for weeks thereafter are \$600 less.  
 
 To qualify for PUA, workers had to self-certify that they were "otherwise able to work and available for work" under their State's UI law, but they were "unemployed, partially unemployed, or unable or unavailable to work because" of one of several qualifying conditions. CARES Act § 2102(a)(3)(A)(ii)(I).
 
