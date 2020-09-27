@@ -22,10 +22,9 @@ The structure and duration of time off from work, or workplace flexibility, that
 
 Employees typically look first to their employer's regular policies to address such needs. Unlike most developed countries, workers in the United States generally are not guaranteed sick leave, vacation days, personal days [@Heymann2020]. Nor is there a right to ask for schedule modifications to address caregiving needs. 
 
-Most full-time workers receive a few weeks of paid time off per year, including paid sick days. However, lower-paid workers are less likely to receive paid sick leave than higher paid workers and fewer than half of part-time workers received paid sick days at all (Figure 1). Paid leave to take care of a family member who is seriously ill is relatively unusual across all wage levels [@BLS2019, tbl. 31].
+Most full-time workers receive a few weeks of paid time off per year, including paid sick days. However, lower-paid workers are less likely to receive paid sick leave than higher paid workers and fewer than half of part-time workers received paid sick days at all. Paid leave to take care of a family member who is seriously ill is relatively unusual across all wage levels [Figure \@ref(fig:lvwage);@BLS2019, tbl. 31].
 
-
-```{r leave_avg_wage, echo = FALSE, message = FALSE, warning = FALSE, fig.cap=""}
+```{r lvwage, echo = FALSE, message = FALSE, warning = FALSE, fig.cap = "Paid Leave by Average Worker Wage", fig.asp = 0.7}
 
 # Data source: (BLS 2019, tbl. 31) https://www.bls.gov/ncs/ebs/benefits/2019/employee-benefits-in-the-united-states-march-2019.pdf
 
@@ -33,7 +32,7 @@ Most full-time workers receive a few weeks of paid time off per year, including 
 
 q <- c("bottom" , "second", "third", "top") 
 quartile <- c(rep(q, 3))
-type <- c(rep("paid sick leave" , 4) , rep("paid family leave" , 4) , rep("unpaid family leave" , 4))
+type <- c(rep("paid family leave" , 4) , rep("paid sick leave" , 4) , rep("unpaid family leave" , 4))
 
 pd_sl <- c(51,79,88,92)
 pd_fl <- c(9,18,22,30)
@@ -55,7 +54,7 @@ pl_plot <- ggplot(data = d2, aes(fill=quartile, y=pct, x=type)) +
             xlab("") + 
             ylab("Percent") +
             ylim(0, 100) +
-            labs(title = "Access to Paid Leave, by Average Worker Wage",
+            labs(title = "Access to Employer-Provided Paid Leave, by Average Worker Wage",
               subtitle = "Civilian Workers, 2019",
               caption = "Data Source: U.S. Bureau of Labor Statistics (2019), tbl. 31"
                 )
@@ -67,9 +66,9 @@ pl_plot
 
 ```
 
-Whatever employer policies provide, some laws guarantee paid time off for certain caregiving responsibilities. These laws tend to fall into two types: (1)  sick day laws, which require employers to provide a relatively limited number of days, usually at full pay, to address illness and other health-related needs; and (2) family and medical leave laws, which let a worker to take a longer period of time off, sometimes at reduced pay or no pay, to address more serious medical conditions (Figure 2). Both can generally be used for the health needs of the employee or close family members.
+Whatever employer policies provide, some laws guarantee paid time off for certain caregiving responsibilities. These laws tend to fall into two types: (1)  sick day laws, which require employers to provide a relatively limited number of days, usually at full pay, to address illness and other health-related needs; and (2) family and medical leave laws, which let a worker to take a longer period of time off, sometimes at reduced pay or no pay, to address more serious medical conditions (Figure \@ref(fig:statemap)). Both can generally be used for the health needs of the employee or close family members.
 
-```{r state_map, echo = FALSE, message = FALSE, warnings = FALSE, fig.cap = " "}
+```{r statemap, echo = FALSE, message = FALSE, warnings = FALSE, fig.cap = "State Paid Leave Laws, 2020"}
 
 # Data Sources: 
 #https://www.abetterbalance.org/resources/paid-family-leave-laws-chart/
@@ -102,9 +101,11 @@ statebins(d,
           ggplot2_scale_function = scale_fill_brewer,
           palette="Set1",
           #round = TRUE,
-          name = "State Paid Leave Laws, 2020") + 
+          name = "Paid Leave Law by Type") + 
           theme_statebins(legend_position="bottom") + 
-          labs(caption = "Data Source: A Better Balance (2020a, 2020b)")
+          labs(
+			title = "State Paid Leave Laws, 2020",
+			caption = "Data Source: A Better Balance (2020a, 2020b)")
 
 ```
 
