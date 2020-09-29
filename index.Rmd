@@ -31,7 +31,7 @@ knitr::write_bib(c(
 
 ## Why read this book {-}
 
-This book is for you if you want to know more about COVID-19's effect on work law in the U.S., but don't have the training, time, or patience to read the law itself or traditional legal commentary. As a result, the contributions are relatively short, but with links to cited primary and secondary sources if you want to dig deeper. The focus is mostly on the United States with a few cross-country comparisons.
+This book is for you if you want to know more about COVID-19's effect on work law, but don't have the training, time, or patience to read the law itself or traditional legal commentary. As a result, the contributions are relatively short, but with links to cited primary and secondary sources if you want to dig deeper. The focus is mostly on the United States with a few cross-country comparisons.
 
 ## Colophon {-}
 
