@@ -58,7 +58,7 @@ Although OSHA takes many years to promulgate safety standards, OSHA may also iss
 >(A) that employees are exposed to grave danger from exposure to substances or agents determined to be toxic or physically harmful or from new hazards, and 
 >(B) that such emergency standard is necessary to protect employees from such danger.
 
-[29 U.S.C. § 655(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec655.htm). OSHA has not issued an ETS since 1983 [@Szymendera2020, appendix].
+[29 U.S.C. § 655(c)(1)](https://www.govinfo.gov/content/pkg/USCODE-2018-title29/html/USCODE-2018-title29-chap15-sec655.htm). OSHA has not issued an ETS since 1983 [@Szymendera2020a, appendix].
 
 OSHA thus far refused to adopt an ETS that would cover COVID-19 exposure. And while a court may order OHSA to adopt an ETS in limited circumstances see 5 U.S.C. § 706(1), the U.S. Court of Appeals for the D.C. Circuit has thus far refused to order OSHA to issue an ETS:  
 
@@ -74,6 +74,6 @@ The OSH Act does permit States to enforce work safety under pre-approved plans, 
 
 These States can thereby issue safety standards on their own to cover their State. For example, California's work safety agency (Cal/OSHA) has a occupational safety standard for protecting against aerosol transmissible diseases in medical and some other workplaces. [Cal. Regs. tit. 8, $\S$ 5199](https://www.dir.ca.gov/title8/5199.html). 
 
-In July 2020, Virginia's workplace safety agency issued an emergency temporary standard specifically for COVID-19 exposure. [§ 16 VAC 25-220](https://www.doli.virginia.gov/wp-content/uploads/2020/07/COVID-19-Emergency-Temporary-Standard-FOR-PUBLIC-DISTRIBUTION-FINAL-7.17.2020.pdf). For details, see @Szymendera2020 [pp. 10-15].
+In July 2020, Virginia's workplace safety agency issued an emergency temporary standard specifically for COVID-19 exposure. [§ 16 VAC 25-220](https://www.doli.virginia.gov/wp-content/uploads/2020/07/COVID-19-Emergency-Temporary-Standard-FOR-PUBLIC-DISTRIBUTION-FINAL-7.17.2020.pdf). For details, see @Szymendera2020a [pp. 10-15].
 
 State safety agencies have varied in their efforts to reduce COVID-19 workplace exposure risk [e.g., @Zou2020].
