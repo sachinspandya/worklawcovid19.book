@@ -15,7 +15,7 @@ cover-image: "cdccovid19image.tif"
 
 # Preface {-}
 
-This book is a first stab at explaining the ways that COVID-19 has thus far affected work law -- mostly in the U.S. with a comparative look at few other countries. Just as the pandemic is ongoing, we are adding and updating contributions to this book as we go. We aim to update the book as quickly as we can as events and information change. To that end, feel free to [email](mailto: worklawcovid@uconn) comments and suggestions -- including what we missed and what we got wrong.
+This book is a first stab at explaining the ways that COVID-19 has thus far affected work law -- mostly in the U.S. with a comparative look at few other countries. The book is a work in progress. Just as the pandemic is ongoing, we are adding and updating contributions to this book as we go as events and information change. To that end, feel free to [email](mailto: worklawcovid@uconn) comments and suggestions -- including what we missed and what we got wrong.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This online collection is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
@@ -33,8 +33,25 @@ knitr::write_bib(c(
 
 This book is for you if you want to know more about COVID-19's effect on work law, but don't have the training, time, or patience to read the law itself or traditional legal commentary. As a result, the contributions are relatively short, but with links to cited primary and secondary sources if you want to dig deeper. The focus is mostly on the United States with a few cross-country comparisons.
 
+## Contributors {-}
+
+Michael C. Duff is a Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
+
+Anthony Forsyth[`r icon::ai("orcid")`](https://orcid.org/0000-0003-0790-8524) is a Professor in the Graduate School of Business and Law at [RMIT University](https://www.rmit.edu.au/contact/staff-contacts/academic-staff/f/forsyth-professor-anthony).
+
+Jeffrey M. Hirsch is the Geneva Yeargan Rand Distinguished Professor of Law at the [University of North Carolina](https://law.unc.edu/people/jeffrey-m-hirsch/).
+
+Sachin S. Pandya[`r icon::ai("orcid")`](http://orcid.org/0000-0001-7387-1307) is a Professor of Law at the [University of Connecticut](https://www.law.uconn.edu/faculty/profiles/sachin-s-pandya).
+
+Elizabeth Pendo is the Joseph J. Simeone Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/elizabeth-pendo.php).
+
+Elizabeth Tippett is an Associate Professor of Law at the [University of Oregon](https://law.uoregon.edu/people/faculty/tippett).
+
+Deborah Widiss is a Professor of Law at [Indiana University](https://law.indiana.edu/about/people/bio.php?name=widiss-deborah).
+
+Ruqaiijah Yearby[`r icon::ai("orcid")`](https://orcid.org/0000-0002-2381-9401) is a Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/ruqaiijah-yearby.php).
+
 ## Colophon {-}
 
-This book was built with `r R.version.string` and bookdown [@R-bookdown].  We used ggplot2, gganimate, and statebins for Figures [@R-ggplot2; @R-gganimate; @R-statebins] and DT for tables [@R-DT].
-
+This book was built with `r R.version.string` and bookdown [@R-bookdown], and various other packages, including DT, ggplot2, gganimate, statebins and timevis [@R-DT; @R-ggplot2; @R-gganimate; @R-statebins; @R-timevis].
 
