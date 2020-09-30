@@ -1,25 +1,58 @@
-# Timeline {#timeline}
+# Timeline of Key Legislation {#timeline}
 
-The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 2020, it had spread to virtually everywhere on Earth. On March 11, 2020, the World Health Organization declared COVID-19 a pandemic [@WHO2020]. By that point, COVID-19 had hit the United States.  When it did, it shocked the system of workplace and labor market regulation in the United States. Unemployment skyrocketed. Workplaces became sites of infection risk and, in some cases, protest and litigation about that risk.
+The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 2020, it had spread to many different places on Earth. On March 11, 2020, the World Health Organization declared COVID-19 a pandemic [@WHO2020]. By that point, COVID-19 had hit the United States.  When it did, it shocked the system of workplace and labor market regulation in the United States. Unemployment skyrocketed. Workplaces became sites of infection risk and, in some cases, protest and litigation about that risk. State governors issued executive orders, including stay-at-home orders, that exempted certain businesses and workers as "essential", largely following an advisory list of "essential" workers from the U.S. Department of Homeland Security [@DHS2020].
 
-In response, in March and April 2020, Congress passed three key pieces of legislation: the Families First Coronavirus Response Act, the CARES Act, and the Paycheck Protection Program.
+## Federal Legislation
 
-```{r UI_timeline, echo=FALSE}
+In response, in March and April 2020 (Figure \@ref(fig:timeline)), the U.S. Congress passed three key pieces of legislation: 
+
+- the Families First Coronavirus Response Act, [Pub. L. No. 116-127, 134 Stat. 178 (March 18, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ127/uslm/PLAW-116publ127.xml); 
+- the Coronavirus Aid, Relief, and Economic Security Act” (“CARES Act”), [Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml); and
+- the Paycheck Protection Program and Health Care Enhancement Act, [Pub. L. No. 116-139, 134 Stat. 620 (April 24, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ139/html/PLAW-116publ139.htm).
+
+```{r timeline, echo=FALSE, fig.cap = "Timeline of Key Legislation"}
 
 library(timevis)
 
 timeline_data <- data.frame(
-  id      = 1:5,
+  id      = 1:4,
   content = c("WHO declares pandemic",
 		      "Families First Act", 
 			  "CARES Act",
-			  "FPUC = $600/week",
 			  "Paycheck Protection Act"
 			  ),
-  start   = c("2020-03-11","2020-03-18", "2020-03-27", "2020-03-27","2020-04-24"),
-  end     = c(NA,NA, NA, "2020-07-31", NA)
+  start   = c("2020-03-11","2020-03-18", "2020-03-27", "2020-04-24"),
+  end     = c(NA,NA, NA, NA)
 )
 
 timevis(timeline_data)
 
 ```
+
+## State COVID-19 Immunity Law
+
+Some States provided, by executive order or statute, time-limited immunity to health care facilities and businesses from tort or other liability arising from COVID-19 exposure.
+
+```{r immlawtbl, message=FALSE, warning=FALSE, echo=FALSE}
+
+data_load_path <- here::here("data","state_covid19_immunity.csv")
+d <- readr::read_csv(data_load_path)
+d$source <- paste0("<a href='",d$source_url,"'target='_blank'>",d$source,"</a>")
+
+library(dplyr)
+
+d2 <- d %>%
+  select(state, source, date)
+
+library(DT)
+
+datatable(d2, escape=FALSE) %>% 
+      formatStyle(columns = 1:5, `font-size` = '12px')
+
+#knitr::kable(d2)
+
+
+```
+
+
+
