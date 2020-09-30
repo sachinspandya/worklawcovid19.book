@@ -1,6 +1,6 @@
 # (PART\*) Workers' Compensation {-} 
 
-# Causation for Workers' Compensation
+# Causation for Workers' Compensation {#wc_causation}
 
 _Michael C. Duff_, 2020-09-06
 

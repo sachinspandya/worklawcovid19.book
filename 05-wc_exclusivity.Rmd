@@ -1,4 +1,4 @@
-# Workers' Compensation Exclusivity
+# Workers' Compensation Exclusivity {#wc_exclusivity}
 
 _Michael C. Duff_, 2020-09-11
 

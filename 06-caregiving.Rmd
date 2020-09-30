@@ -1,6 +1,6 @@
 # (PART\*) Caregiving and Leave {-} 
 
-# Work and Caregiving during COVID-19
+# Work and Caregiving during COVID-19 {#caregiving}
 
 _Deborah A. Widiss_, 2020-09-17
 
