@@ -1,6 +1,6 @@
 # (PART\*) Disability {-} 
 
-# COVID-19 Screening, Remote Work, and Disability Law
+# COVID-19 Screening, Remote Work, and Disability Law {#disability}
 
 _Elizabeth Pendo_, 2020-09-17
  

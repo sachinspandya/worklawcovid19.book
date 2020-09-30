@@ -19,7 +19,7 @@ Individuals receiving STC payments must meet the UI availability for work and wo
 
 When Congress enacted the CARES Act, it authorized 100% federal financing of STC in states with existing STC programs and 50% federal financing for states that set up STC programs (up to the equivalent of 26 weeks of benefits for individuals) through the end of December 2020. The CARES Act also provided for Federal Pandemic Unemployment Compensation (FPUC) - additional $600 in payments to UI claimants who met certain qualifying criteria.  This additional \$600 applied to STC payments as well, so that the employee working reduced hours was eligible for the full \$600 in FPUC _on top of_ their STC benefits [@UIPL15-20, I-5].
 
-Thereafter, the number of employers with STC plans appears to have increased in most States with STC programs (Figure 1).
+Thereafter, the number of employers with STC plans appears to have increased in most States with STC programs (Figure \@ref(fig:stcfigf)).
 
 ```{r stc_fig, echo=FALSE, eval=FALSE}
 
@@ -70,13 +70,12 @@ anim <- staticplot +
 ```
 
 
-```{r stc_figf, warning=FALSE, echo=FALSE, message = FALSE}
+```{r stcfigf, warning=FALSE, echo=FALSE, message = FALSE, fig.cap = "Number of STC Employers"}
 
 load_path <- here::here("figures_final","stc_fig-1.gif")
 knitr::include_graphics(load_path)
 
 ```
 
-
-On July 31, 2020, the FPUC $600 weekly payments expired.
+The \$600 FPUC provision of the CARES Act only applied to "weeks of unemployment . . . ending on or before July 31, 2020." CARES Act § 2104(e).  As a result, STC payments for weeks of unemployment past July 31 tended to be smaller.
 
