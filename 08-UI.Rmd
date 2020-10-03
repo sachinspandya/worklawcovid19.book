@@ -2,7 +2,7 @@
 
 # Unemployment Insurance {#ui}
 
-_Sachin S. Pandya_, 2020-09-13
+_Sachin S. Pandya_, 2020-10-03
 
 This Chapter covers how changes in the law of unemployment insurance (UI) affected workers who became unemployed because of COVID-19. As COVID-19 hit the US and spread, and more workers became unemployed as a result, unemployed UI claimants faced the problem of getting and keeping UI benefits. 
 Congress also pushed States to relax some UI rules, and to provide aid of its own. In Title II(A) of the [CARES Act, Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml), Congress provided for additional UI payments, including a newly-created Federal Pandemic Unemployment Compensation ("FPUC") benefit and a new Pandemic Unemployment Assistance ("PUA") benefit, along with eligibility rules that applied on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits.
@@ -145,5 +145,74 @@ In early April 2020, DOL identified "additional criteria" to address PUA eligibi
 >[A]n individual who works as an independent contractor with reportable income may also qualify for PUA benefits if he or she is unemployed, partially employed, or unable or unavailable to work because the COVID-19 public health emergency has severely limited his or her ability to continue performing his or her customary work activities, and has thereby forced the individual to suspend such activities.
 
 For example, even if a driver for a "ridesharing service" is treated as an independent contractor, and thus has no "place of employment" that closed due to COVID-19, the driver may still qualify for PUA "if he or she has been forced to suspend operations as a direct result of the COVID19 public health emergency, such as if an emergency state or municipal order restricting movement makes continued operations unsustainable" [@UIPL1620a, I-6].
+
+Since March, millions of people have received PUA (Figure \@ref(fig:pua) ).
+
+
+```{r pua, echo=FALSE, message = FALSE, warning = FALSE, fig.cap = "PUA Eligible Claimants by Month"}
+
+# ETA 902P
+
+#data <- readr::read_csv("https://oui.doleta.gov/unemploy/csv/ap902.csv")
+save_path <- here::here("data","ap902.csv")
+#readr::write_csv(data,save_path)
+
+library(tidyverse)
+
+data <- read_csv(save_path)
+
+library(lubridate)
+
+d <- data %>%
+  mutate(report_date = mdy(rptdate)) %>%
+  rename(stateab = st,
+         app_total = c1,
+         elig_total = c2,
+         app_se = c7,
+         elig_se = c8,
+         f_pymnt = c3,
+         wks_clm = c4,
+         wks_cmp = c5,
+         amt_cmp = c6)
+
+d <- d %>%
+  select (stateab, report_date,
+          app_total, elig_total,
+          app_se, elig_se,
+          f_pymnt, wks_clm,
+          wks_cmp, amt_cmp
+          ) %>%
+  mutate(month_date = floor_date(report_date, "month"))
+
+d_all <- d %>%
+  filter (month_date != "2020-09-01",
+          month_date !="2020-02-01",
+          month_date != "2020-01-01") %>%
+  group_by(month_date) %>%
+  summarise(across(where(is.numeric), sum))
+
+d_elig <- d_all %>%
+  select(month_date,elig_total,elig_se) %>%
+  pivot_longer(cols = starts_with("elig"), names_prefix = "elig_", names_to = "type", values_to = "count")
+
+plot_elig <- ggplot(data = d_elig, aes(x = month_date, 
+                                 y = count/1000000, 
+                                 color = type,
+                                 shape = type)) + 
+        geom_line() + geom_point() +
+        theme_minimal() + ylab("Count (millions)") + xlab("") +  
+            theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
+                  legend.position = "bottom") +
+            labs(title = "PUA Eligible Applicants by Month",
+                 subtitle = "March - August 2020",
+                  caption = "Data Source: ETA 902P") +
+             scale_color_discrete(name = "Claimant Type", 
+                                 labels=c("self-employed", "all")) +
+             scale_shape_discrete(name = "Claimant Type", 
+                                 labels=c("self-employed", "all"))
+            
+plot_elig
+
+```
 
 PUA benefits only cover "weeks of unemployment, partial unemployment, or inability to work caused by COVID–19" up through December 31, 2020. CARES Act § 2102(c)(1)(A).
