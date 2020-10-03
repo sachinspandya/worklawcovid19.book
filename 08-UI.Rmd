@@ -215,4 +215,44 @@ plot_elig
 
 ```
 
+Not surprisingly, States vary as to the claimants they've determined eligible for PUA, and how many of those are self-employed (Figure \@ref(fig:puastate)).
+
+```{r puastate, echo = FALSE, message = FALSE, fig.cap = "PUA Recipients, Selected States"}
+
+d_state <- d %>%
+  select(stateab,month_date,elig_total,elig_se) %>%
+  pivot_longer(cols = starts_with("elig"), names_prefix = "elig_", names_to = "type", values_to = "count")
+
+d_state <- d_state %>%
+  filter(stateab == "CA" |
+         stateab == "PA" |
+         stateab == "OH" |   
+         stateab == "NY" |
+         stateab == "GA" |
+         stateab == "IL" |
+         stateab == "NC" |
+         stateab == "NJ" |
+         stateab == "TX")
+
+plot_state <- ggplot(data = d_state, aes(x = month_date, 
+                                 y = count/1000, 
+                                 color = type,
+                                 shape = type)) + 
+        geom_line() + geom_point() +
+        theme_minimal() + ylab("Count (1000s)") + xlab("") +  
+            theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
+                  legend.position = "bottom") +
+            labs(title = "PUA Eligible Applicants",
+                 subtitle = "Selected States, March - August 2020",
+                  caption = "Data Source: ETA 902P") +
+             scale_color_discrete(name = "Claimant Type", 
+                                 labels=c("self-employed", "all")) +
+             scale_shape_discrete(name = "Claimant Type", 
+                                 labels=c("self-employed", "all")) +
+              facet_wrap(~ stateab)            
+      
+plot_state
+
+```
+
 PUA benefits only cover "weeks of unemployment, partial unemployment, or inability to work caused by COVID–19" up through December 31, 2020. CARES Act § 2102(c)(1)(A).
