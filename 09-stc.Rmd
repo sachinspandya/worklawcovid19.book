@@ -1,6 +1,6 @@
 # Short-Time Compensation {#stc}
 
-_Sachin S. Pandya_, 2020-09-13
+_Sachin S. Pandya_, 2020-09-30
 
 In the U.S., Short-Time Compensation ("STC") refers to programs adopted by some State unemployment insurance systems to encourage employers can keep employing workers during economic downturns by reducing their hours rather than laying them off [@Whittaker2016]. Under an STC program, if an employer reduces worker hours in lieu of layoffs, the State will pay those workers with pro-rated unemployment insurance benefits to cover part of what those workers lose in pay by working fewer hours.
 
@@ -60,12 +60,14 @@ anim <- staticplot +
   labs(title = "Number of STC Employers",
 		   subtitle = "{closest_state} Report",
        #subtitle = 'Frame {frame} of {nframes}',
-        caption = "Source: USDOL ETA 5159") + 
+        caption = "Data Source: ETA 5159") + 
   theme(axis.title.x=element_blank())
 
-#stc_gif <- animate(anim, nframes = 80, end_pause = 20, rewind = F, renderer = gifski_renderer())
+stc_gif <- animate(anim, nframes = 80, end_pause = 20, rewind = F, renderer = gifski_renderer())
 
-#stc_gif
+save_path <- here::here("figures_final")
+
+anim_save(filename = "stc_fig-1.gif", animation = stc_gif, path = save_path)
 
 ```
 
