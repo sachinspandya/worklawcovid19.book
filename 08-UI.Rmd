@@ -84,7 +84,9 @@ When the CARES Act passed, State UI agencies could not immediately begin process
 
 # if no activity, no report filed
 
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(ggplot2)
 
 data <- read_csv("https://oui.doleta.gov/unemploy/csv/ar2112.csv")
 write_csv(data,"ar2112.csv")
