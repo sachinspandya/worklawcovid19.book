@@ -36,6 +36,8 @@ This book is for you if you want to know more about COVID-19's effect on work la
 
 ## Contributors {-}
 
+Elizabeth A. Brown is an Associate Professor, Law and Taxation, at [Bentley University](https://faculty.bentley.edu/details.asp?uname=ebrown1).
+
 Michael C. Duff is a Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
 
 David Doorey is an Associate Professor of Work Law at [York University](https://profiles.laps.yorku.ca/profiles/ddoorey/).
@@ -50,7 +52,7 @@ Elizabeth Pendo is the Joseph J. Simeone Professor of Law at [Saint Louis Univer
 
 Elizabeth Tippett is an Associate Professor of Law at the [University of Oregon](https://law.uoregon.edu/people/faculty/tippett).
 
-Deborah Widiss is a Professor of Law at [Indiana University](https://law.indiana.edu/about/people/bio.php?name=widiss-deborah).
+Deborah Widiss[`r icon::ai("orcid")`](http://orcid.org/0000-0002-9690-886X) is a Professor of Law at [Indiana University](https://law.indiana.edu/about/people/bio.php?name=widiss-deborah).
 
 Ruqaiijah Yearby[`r icon::ai("orcid")`](https://orcid.org/0000-0002-2381-9401) is a Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/ruqaiijah-yearby.php).
 
