@@ -35,7 +35,7 @@ Some States provided, by executive order or statute, time-limited immunity to he
 
 ```{r immlawtbl, message=FALSE, warning=FALSE, echo=FALSE}
 
-data_load_path <- here::here("data","state_covid19_immunity.csv")
+data_load_path <- here::here("data","state_covid19_imm.csv")
 d <- readr::read_csv(data_load_path)
 d$source <- paste0("<a href='",d$source_url,"'target='_blank'>",d$source,"</a>")
 
