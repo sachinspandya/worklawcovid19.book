@@ -2,7 +2,7 @@
 
 # Unemployment Insurance {#ui}
 
-_Sachin S. Pandya_, 2020-10-09
+_Sachin S. Pandya_, 2020-11-10
 
 This Chapter covers how changes in the law of unemployment insurance (UI) affected workers who became unemployed because of COVID-19. As COVID-19 hit the US and spread, and more workers became unemployed as a result, unemployed UI claimants faced the problem of getting and keeping UI benefits. 
 Congress also pushed States to relax some UI rules, and to provide aid of its own. In Title II(A) of the [CARES Act, Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml), Congress provided for additional UI payments, including a newly-created Federal Pandemic Unemployment Compensation ("FPUC") benefit and a new Pandemic Unemployment Assistance ("PUA") benefit, along with eligibility rules that applied on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits.
@@ -55,7 +55,7 @@ dotplot
 
 ```
 
-Then, once you start getting UI benefits, you've got to do some things to keep on getting them. For the Department of Labor (DOL) to certify a State's UI program, that State's UI law must at least require that, "for regular compensation for any week, a claimant must be able to work, available to work, and actively seeking work." 42 U.S.C. $\S$ 503(a)(12). 
+Then, once you start getting UI benefits, you've got to do some things to keep on getting them. For the Department of Labor (DOL) to certify a State's UI program, that State's UI law must at least require that, "for regular compensation for any week, a claimant must be able to work, available to work, and actively seeking work." [42 U.S.C. $\S$ 503(a)(12)](https://www.govinfo.gov/content/pkg/USCODE-2018-title42/html/USCODE-2018-title42-chap7-subchapIII-sec503.htm). 
 
 What counts as "able", "available", and "actively seeking" can vary. For example, a State may take an individual as "available" to work if, say, that individual is "on temporary lay-off and is available to work only for the employer that has temporarily laid-off the individual." [20 CFR § 604.5(a)(3)](https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=f6d24b9ec09459c3e1487411a97e871f&mc=true&r=PART&n=pt20.3.604#se20.3.604_15). Moreover, while an individual must be "available for work," State UI law may limit that availability to only "suitable" work so long as that doesn’t let an individual “withdraw[ ] from the labor market” while receiving UI benefits [20 C.F.R. 604.5(a)(2)]( https://www.ecfr.gov/cgi-bin/text-idx?SID=2564f6f58a76c73ef8fe2c46e4ce4768&mc=true&node=se20.3.604_15&rgn=div8). Most States' UI law limits the availability requirement to "suitable" work, though what counts as "suitable" and as a good-enough reason ("good cause") to refuse suitable work, varies by State [@DOL2019, 5-33 - 5-38].
 
@@ -153,16 +153,15 @@ In early April 2020, DOL identified "additional criteria" to address PUA eligibi
 
 For example, even if a driver for a "ridesharing service" is treated as an independent contractor, and thus has no "place of employment" that closed due to COVID-19, the driver may still qualify for PUA "if he or she has been forced to suspend operations as a direct result of the COVID19 public health emergency, such as if an emergency state or municipal order restricting movement makes continued operations unsustainable" [@UIPL1620a, I-6].
 
-Since March, millions of people have been declared eligible for PUA (Figure \@ref(fig:pua) ).
+Since March, millions of people have been declared eligible for PUA (Figure \@ref(fig:puafig)).
 
-
-```{r pua, echo=FALSE, message = FALSE, warning = FALSE, fig.cap = "PUA Eligible Claimants by Month"}
+```{r pua, echo=FALSE, message = FALSE, warning = FALSE, eval=FALSE}
 
 # ETA 902P
 
-#data <- readr::read_csv("https://oui.doleta.gov/unemploy/csv/ap902.csv")
+data <- readr::read_csv("https://oui.doleta.gov/unemploy/csv/ap902.csv")
 save_path <- here::here("data","ap902.csv")
-#readr::write_csv(data,save_path)
+readr::write_csv(data,save_path)
 
 library(tidyverse)
 
@@ -203,7 +202,7 @@ d_elig <- d_all %>%
   select(month_date,elig_total,elig_se) %>%
   pivot_longer(cols = starts_with("elig"), names_prefix = "elig_", names_to = "type", values_to = "count")
 
-plot_elig <- ggplot(data = d_elig, aes(x = month_date, 
+pua_all_plot <- ggplot(data = d_elig, aes(x = month_date, 
                                  y = count/1000000, 
                                  color = type,
                                  shape = type)) + 
@@ -219,13 +218,22 @@ plot_elig <- ggplot(data = d_elig, aes(x = month_date,
              scale_shape_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all"))
             
-plot_elig
+save_path <- here::here("figures_final")
+ggsave("pua_all_plot.png", path = save_path)
+
 
 ```
 
-Not surprisingly, States vary as to the claimants they've determined eligible for PUA, and how many of those are self-employed (Figure \@ref(fig:puastate)).
+```{r puafig, warning=FALSE, echo=FALSE, message = FALSE, fig.cap = "PUA Eligible Claimants by Month", fig.asp = 0.7}
 
-```{r puastate, echo = FALSE, message = FALSE, fig.cap = "PUA Recipients, Selected States"}
+load_path <- here::here("figures_final","pua_all_plot.png")
+knitr::include_graphics(load_path)
+
+```
+
+Not surprisingly, States vary as to the claimants they've determined eligible for PUA, and how many of those are self-employed (Figure \@ref(fig:puastatefig)).
+
+```{r puastate, echo = FALSE, message = FALSE, eval = FALSE}
 
 d_state <- d %>%
   select(stateab,month_date,elig_total,elig_se) %>%
@@ -242,7 +250,7 @@ d_state <- d_state %>%
          stateab == "NJ" |
          stateab == "TX")
 
-plot_state <- ggplot(data = d_state, aes(x = month_date, 
+plot_pua_state <- ggplot(data = d_state, aes(x = month_date, 
                                  y = count/1000, 
                                  color = type,
                                  shape = type)) + 
@@ -258,14 +266,19 @@ plot_state <- ggplot(data = d_state, aes(x = month_date,
              scale_shape_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
               facet_wrap(~ stateab)            
-      
-plot_state
+
+save_path <- here::here("figures_final")      
+ggsave("plot_pua_state.png", path = save_path)
+
+```
+
+```{r puastatefig, warning=FALSE, echo=FALSE, message = FALSE, fig.cap = "PUA Recipients, Selected States"}
+
+load_path <- here::here("figures_final","plot_pua_state.png")
+knitr::include_graphics(load_path)
 
 ```
 
 ### PUA Overpayment
 
-A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. It can't waive any overpayment under these regulations, even if it could under State law. Id. § 625.14(e).
-
-
-
+A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. Although some State UI laws let the State UI agency waive any overpayment obligation [@DOL2019, tbl. 6-1], that agency can't waive any overpayment under these federal regulations. Id. [20 C.F.R. § 625.14(e)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114).
