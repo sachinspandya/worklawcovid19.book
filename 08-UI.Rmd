@@ -192,7 +192,8 @@ d <- d %>%
   mutate(month_date = floor_date(report_date, "month"))
 
 d_all <- d %>%
-  filter (month_date != "2020-09-01",
+  filter (
+          month_date != "2020-10-01",
           month_date !="2020-02-01",
           month_date != "2020-01-01") %>%
   group_by(month_date) %>%
@@ -211,7 +212,7 @@ plot_elig <- ggplot(data = d_elig, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants by Month",
-                 subtitle = "March - August 2020",
+                 subtitle = "March - September 2020",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
@@ -250,7 +251,7 @@ plot_state <- ggplot(data = d_state, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants",
-                 subtitle = "Selected States, March - August 2020",
+                 subtitle = "Selected States, March - September 2020",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
