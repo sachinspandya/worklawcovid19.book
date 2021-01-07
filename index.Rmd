@@ -8,7 +8,7 @@ bibliography: [book.bib, packages.bib]
 #citation_package: biblatex
 biblio-style: apalike
 link-citations: yes
-description: "How COVID-19 has affected work law in the U.S. and elsewhere"
+description: "How COVID-19 has affected work law in the U.S."
 #cover-image: "cdccovid19image.tif"
 always_allow_html: true
 ---
@@ -38,27 +38,55 @@ This book is for you if you want to know more about COVID-19's effect on work la
 
 Elizabeth A. Brown is an Associate Professor, Law and Taxation, at [Bentley University](https://faculty.bentley.edu/details.asp?uname=ebrown1).
 
-Michael C. Duff is a Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
+Michael C. Duff is the Winston S. Howard Distinguished Professor of Law at the [University of Wyoming](http://www.uwyo.edu/law/directory/mike-duff.html).
 
 David Doorey is an Associate Professor of Work Law at [York University](https://profiles.laps.yorku.ca/profiles/ddoorey/).
 
-Anthony Forsyth[`r icon::ai("orcid")`](https://orcid.org/0000-0003-0790-8524) is a Professor in the Graduate School of Business and Law at [RMIT University](https://www.rmit.edu.au/contact/staff-contacts/academic-staff/f/forsyth-professor-anthony).
+Anthony Forsyth[<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>](https://orcid.org/0000-0003-0790-8524) is a Professor in the Graduate School of Business and Law at [RMIT University](https://www.rmit.edu.au/contact/staff-contacts/academic-staff/f/forsyth-professor-anthony).
 
 Jeffrey M. Hirsch is the Geneva Yeargan Rand Distinguished Professor of Law at the [University of North Carolina](https://law.unc.edu/people/jeffrey-m-hirsch/).
 
 Ann C. Juliano is a Professor of Law at [Villanova University](https://www1.villanova.edu/villanova/law/academics/faculty/Facultyprofiles/AnnCJuliano.html)
 
-Sachin S. Pandya[`r icon::ai("orcid")`](http://orcid.org/0000-0001-7387-1307) is a Professor of Law at the [University of Connecticut](https://www.law.uconn.edu/faculty/profiles/sachin-s-pandya).
+Sachin S. Pandya[<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>](http://orcid.org/0000-0001-7387-1307) is a Professor of Law at the [University of Connecticut](https://www.law.uconn.edu/faculty/profiles/sachin-s-pandya).
 
 Elizabeth Pendo is the Joseph J. Simeone Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/elizabeth-pendo.php).
 
 Elizabeth Tippett is an Associate Professor of Law at the [University of Oregon](https://law.uoregon.edu/people/faculty/tippett).
 
-Deborah Widiss[`r icon::ai("orcid")`](http://orcid.org/0000-0002-9690-886X) is a Professor of Law at [Indiana University](https://law.indiana.edu/about/people/bio.php?name=widiss-deborah).
+Deborah Widiss[<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>](http://orcid.org/0000-0002-9690-886X) is a Professor of Law at [Indiana University](https://law.indiana.edu/about/people/bio.php?name=widiss-deborah).
 
-Ruqaiijah Yearby[`r icon::ai("orcid")`](https://orcid.org/0000-0002-2381-9401) is a Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/ruqaiijah-yearby.php).
+Ruqaiijah Yearby[<img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" /></a>](https://orcid.org/0000-0002-2381-9401) is a Professor of Law at [Saint Louis University](https://www.slu.edu/law/faculty/ruqaiijah-yearby.php).
 
 ## Colophon {-}
 
-This book was built with `r R.version.string` and bookdown [@R-bookdown], and various other packages, including DT, ggplot2, gganimate, statebins and timevis [@R-DT; @R-ggplot2; @R-gganimate; @R-statebins; @R-timevis].
+This book was built with `r R.version.string` and bookdown [@R-bookdown].
 
+```{r message = FALSE, warning = FALSE, echo = FALSE, eval = FALSE}
+# needed because new_session is set to true in _bookdown.yml
+
+library(dplyr)
+all_pkgs <- renv::dependencies() %>% 
+  pull(Package) 
+session <- devtools::session_info(pkgs = all_pkgs)
+session$platform
+```
+
+```{r message = FALSE, warning = FALSE, echo = FALSE, eval = FALSE}
+library(dplyr)
+all_pkgs <- renv::dependencies(progress = FALSE) %>% 
+  pull(Package) 
+
+session <- devtools::session_info(pkgs = all_pkgs)
+
+session$packages %>% 
+  #select(package, loadedversion, date, source) %>% 
+  select(package, date, source) %>% 
+  DT::datatable(rownames = FALSE,
+                class = 'cell-border stripe',
+                filter = list(position = 'top'),
+                options = list(pageLength = 25, 
+                           autoWidth = TRUE,
+                           bInfo = FALSE,
+                           paging = TRUE))
+```
