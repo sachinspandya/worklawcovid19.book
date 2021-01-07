@@ -43,7 +43,7 @@ d <- data %>%
          #stateab != "VI",
          #c10 != 0,
          report_date > ymd("2019-11-01"),
-         report_date < ymd("2020-10-31")
+         report_date < ymd("2020-12-31")
          )
 
 staticplot <- ggplot(d,aes(x = c10, y = reorder(stateab,c10), 
@@ -72,7 +72,7 @@ anim_save(filename = "stc_fig-1.gif", animation = stc_gif, path = save_path)
 ```
 
 
-```{r stcfigf, warning=FALSE, echo=FALSE, message = FALSE, fig.cap = "Number of STC Employers"}
+```{r stcfigf, warning=FALSE, echo=FALSE, message = FALSE, fig.align="center", fig.cap = "Number of STC Employers"}
 
 load_path <- here::here("figures_final","stc_fig-1.gif")
 knitr::include_graphics(load_path)
