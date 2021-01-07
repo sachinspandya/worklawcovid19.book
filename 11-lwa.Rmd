@@ -1,6 +1,6 @@
 # Lost Wage Assistance {#lwa}
 
-_Sachin S. Pandya_, 2020-09-29
+_Sachin S. Pandya_, 2020-12-30
 
 On August 8, 2020, amidst stalled negotiations over extending the FPUC, President Trump issued a [memorandum](https://www.whitehouse.gov/presidential-actions/memorandum-authorizing-needs-assistance-program-major-disaster-declarations-related-coronavirus-disease-2019/) authorizing the Federal Emergency Management Agency (FEMA) to provide "lost wages assistance" (LWA) pursuant to section 408(e) of Stafford Act, the main federal law authorizing disaster relief. Under this program, unemployed workers already eligible for at least \$100/week in State unemployment insurance benefits could apply to get an additional \$300/week until LWA funds -- roughly a month or so. On paper, this aid was _not_ disaster assistance for the unemployed under Stafford Act section 410, but so-called "other needs" assistance under section 408(e) of that Act.
 
@@ -40,4 +40,4 @@ The problem: FEMA can provide section 408(e) other-needs assistance to an indivi
 
 Thus, the LWA seems like an effort by Trump Administration lawyers to use disaster relief funds for unemployment relief while avoiding the restrictions associated with Stafford Act unemployment disaster assistance for the unemployed under Stafford Act section 410, such as that the unemployed individual receiving such assistance is "not entitled to any other unemployment compensation." [42 U.S.C. § 5177(a)](https://www.govinfo.gov/content/pkg/USCODE-2018-title42/html/USCODE-2018-title42-chap68-subchapIV-sec5177.htm).  To the contrary, someone seeking LWA would not qualify unless they qualified under State unemployment insurance for at least \$100/week.
 
-Thus far, no one has filed a lawsuit challenging the LWA as outside the President's authority under section 408(e) of the Stafford Act.
+No one filed a lawsuit challenging the LWA as outside the President's authority under section 408(e) of the Stafford Act. To the contrary, in late December 2020, Congress enacted the Continued Assistance for Unemployed Workers Act of 2020. In that Act, Congress specifically referred to the assistance for "supplemental lost wage payments" provided under the Stafford Act when it provided that if an individual was not entitled to such payments but received them anyway, a State must require that individual to repay the State agency, but the State could waive repayment if that individual was "without fault" and "repayment would be contrary to equity and good conscience." $\S$ 262(a)-(b), H.R. 133, p. 782 (enacted Dec. 27, 2020). If State chose to waive repayment to the State, that waiver would also apply to "the debt owed to the United States." $\S$ 262(c).
