@@ -2,10 +2,11 @@
 
 # Unemployment Insurance {#ui}
 
-_Sachin S. Pandya_, 2020-11-10
+_Sachin S. Pandya_, 2020-12-30
 
 This Chapter covers how changes in the law of unemployment insurance (UI) affected workers who became unemployed because of COVID-19. As COVID-19 hit the US and spread, and more workers became unemployed as a result, unemployed UI claimants faced the problem of getting and keeping UI benefits. 
-Congress also pushed States to relax some UI rules, and to provide aid of its own. In Title II(A) of the [CARES Act, Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml), Congress provided for additional UI payments, including a newly-created Federal Pandemic Unemployment Compensation ("FPUC") benefit and a new Pandemic Unemployment Assistance ("PUA") benefit, along with eligibility rules that applied on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits.
+Congress also pushed States to relax some UI rules, and to provide aid of its own. In Title II(A) of the [CARES Act, Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml), Congress provided for additional UI payments, including a newly-created Federal Pandemic Unemployment Compensation ("FPUC") benefit and a new Pandemic Unemployment Assistance ("PUA") benefit, along with eligibility rules that applied on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits. Congress extended and modified some of these CARES Act provisions in the Continued Assistance for
+Unemployed Workers Act of 2020, the name for Title II(A) of the Consolidated Appropriations Act, 2021 (enacted Dec. 27, 2020).
 
 ## UI Eligibility {#ui_elig}
 
@@ -122,18 +123,21 @@ fpuc_plot <- ggplot(d,aes(x = fpuc, y = reorder(stateab,fpuc),
 
 fpuc_plot
 
-#save_path <- here::here("figures_final")
-#ggsave("fpuc_plot.png", path = save_path)
+save_path <- here::here("figures_final")
+ggsave("fpuc_plot.png", path = save_path)
 
 ```
 
 By July 2020, the flat \$600 FPUC amount was still politically controversial. Some politicians complained that the $600 amount was too large, because in some cases, the total weekly UI benefit exceeded wage replacement, i.e., what what they would have received in weekly wages had they gone back to work. Research at the time and since has found little evidence that high UI amounts affected return to work [@Bartik2020; @Altonji2020; @Petrosky2020]. As politicians debated, DOL asked state workforce agencies (which administer State UI programs), in a July 13 survey from DOL's UI Administrator, how long it would take to implement a revised FPUC tied to a claimant's past wages, adding “I know from our conversations with a number of you that these are heavy lifts, and we want to be able to quantify that appropriately.”[quoted in @Penn2020]
 
-The \$600 FPUC provision of the CARES Act only applied to "weeks of unemployment . . . ending on or before July 31, 2020." CARES Act § 2104(e).  Accordingly, for individuals getting UI payments for weeks of unemployment past July 31, those individuals do not get any FPUC amount.
+The \$600 FPUC provision of the CARES Act only applied to "weeks of unemployment . . . ending on or before July 31, 2020." CARES Act § 2104(e).  Accordingly, for individuals getting UI payments for weeks of unemployment past July 31, those individuals did not get any FPUC amount. In late December 2020, Congress revived FPUC benefits for weeks of unemployment up through March 14, 2021, albeit for \$300 for weeks of unemployment after December 26. Continued Assistance for Unemployed Workers Act of 2020, Pub. L. No. 116-260, $\S$ 203(a), [H.R. 133](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf), p. 772 (enacted Dec. 27, 2020). 
 
 ## PUA: Pandemic Unemployment Assistance {#pua}
 
-The CARES Act also separately provided a Pandemic Unemployment Assistance benefit (PUA) for someone who wasn't eligible for regular or extended UI benefits under State or Federal law, including someone who had "exhausted" those benefits. [CARES Act § 2102(a)(3)(A)(i)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  If you qualified for PUA, you would get a weekly amount equal to the State UI amount _plus_ the flat FPUC amount that you would have been otherwise entitled to receive. CARES Act § 2102(d).  Because the FPUC only covers weeks of unemployment up through July 31, 2020, the PUA amounts for weeks after July 31 are \$600 less. Moreover, PUA benefits only cover "weeks of unemployment, partial unemployment, or inability to work caused by COVID–19" up through December 31, 2020. CARES Act § 2102(c)(1)(A).
+The CARES Act also separately provided a Pandemic Unemployment Assistance benefit (PUA) for someone who wasn't eligible for regular or extended UI benefits under State or Federal law, including someone who had "exhausted" those benefits. [CARES Act § 2102(a)(3)(A)(i)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml).  If you qualified for PUA, you would get a weekly amount equal to the State UI amount _plus_ the flat FPUC amount that you would have been otherwise entitled to receive. CARES Act § 2102(d).  Because the FPUC only covers weeks of unemployment up through July 31, 2020, the PUA amounts for weeks after July 31 are \$600 less. 
+
+Originally, PUA benefits only covered "weeks of unemployment, partial unemployment, or inability to work caused by COVID–19" up through December 31, 2020. CARES Act § 2102(c)(1)(A). In late December 2020, Congress extended PUA benefit coverage to March 14, 2021. Continued Assistance for
+Unemployed Workers Act of 2020, $\S$ 201(a), [H.R. 133](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf) (enacted Dec. 27, 2020).
 
 ### PUA Eligibility
 
@@ -192,7 +196,7 @@ d <- d %>%
 
 d_all <- d %>%
   filter (
-          month_date != "2020-10-01",
+          month_date != "2020-11-01",
           month_date !="2020-02-01",
           month_date != "2020-01-01") %>%
   group_by(month_date) %>%
@@ -211,7 +215,7 @@ pua_all_plot <- ggplot(data = d_elig, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants by Month",
-                 subtitle = "March - September 2020",
+                 subtitle = "March - October 2020",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
@@ -259,7 +263,7 @@ plot_pua_state <- ggplot(data = d_state, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants",
-                 subtitle = "Selected States, March - September 2020",
+                 subtitle = "Selected States, March - October 2020",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
@@ -281,4 +285,6 @@ knitr::include_graphics(load_path)
 
 ### PUA Overpayment
 
-A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. Although some State UI laws let the State UI agency waive any overpayment obligation [@DOL2019, tbl. 6-1], that agency can't waive any overpayment under these federal regulations. Id. [20 C.F.R. § 625.14(e)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114).
+A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. Although some State UI laws let the State UI agency waive any overpayment obligation [@DOL2019, tbl. 6-1], that agency can't waive any overpayment under these federal regulations. [20 C.F.R. § 625.14(e)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). However, when Congress extend PUA coverage to March 2021, it also authorized States to waive any PUA overpayment obligation if the State finds that the individual receiving the overpayment was "without fault" and repayment "would be contrary to equity and good conscience." Continued Assistance for
+Unemployed Workers Act of 2020, Pub. L. No. 116-260, $\S$ 201(d), [H.R. 133](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf), p. 771. 
+
