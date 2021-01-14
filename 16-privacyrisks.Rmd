@@ -1,5 +1,3 @@
-# (PART\*) Privacy {-} 
-
 # COVID-19 Employee Health Checks Create New Privacy Risks {#privacyrisks}
 
 _Elizabeth A. Brown_, 2020-11-03
