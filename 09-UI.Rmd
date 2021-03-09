@@ -2,7 +2,7 @@
 
 # Unemployment Insurance {#ui}
 
-_Sachin S. Pandya_, 2020-12-30
+_Sachin S. Pandya_, 2021-03-09
 
 This Chapter covers how changes in the law of unemployment insurance (UI) affected workers who became unemployed because of COVID-19. As COVID-19 hit the US and spread, and more workers became unemployed as a result, unemployed UI claimants faced the problem of getting and keeping UI benefits. 
 Congress also pushed States to relax some UI rules, and to provide aid of its own. In Title II(A) of the [CARES Act, Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml), Congress provided for additional UI payments, including a newly-created Federal Pandemic Unemployment Compensation ("FPUC") benefit and a new Pandemic Unemployment Assistance ("PUA") benefit, along with eligibility rules that applied on top of, or as exceptions to, State UI eligibility rules. The result: A complex web of eligibility rules between workers and UI monetary benefits. Congress extended and modified some of these CARES Act provisions in the Continued Assistance for
@@ -157,7 +157,7 @@ In early April 2020, DOL identified "additional criteria" to address PUA eligibi
 
 For example, even if a driver for a "ridesharing service" is treated as an independent contractor, and thus has no "place of employment" that closed due to COVID-19, the driver may still qualify for PUA "if he or she has been forced to suspend operations as a direct result of the COVID19 public health emergency, such as if an emergency state or municipal order restricting movement makes continued operations unsustainable" [@UIPL1620a, I-6].
 
-Since March, millions of people have been declared eligible for PUA (Figure \@ref(fig:puafig)).
+Since March 2020, millions of people have been declared eligible for PUA (Figure \@ref(fig:puafig)).
 
 ```{r pua, echo=FALSE, message = FALSE, warning = FALSE, eval=FALSE}
 
@@ -196,9 +196,10 @@ d <- d %>%
 
 d_all <- d %>%
   filter (
-          month_date != "2020-11-01",
+          #month_date != "2021-02-01",
           month_date !="2020-02-01",
-          month_date != "2020-01-01") %>%
+          month_date != "2020-01-01"
+          ) %>%
   group_by(month_date) %>%
   summarise(across(where(is.numeric), sum))
 
@@ -215,7 +216,7 @@ pua_all_plot <- ggplot(data = d_elig, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants by Month",
-                 subtitle = "March - October 2020",
+                 subtitle = "March 2020 - January 2021",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
@@ -263,7 +264,7 @@ plot_pua_state <- ggplot(data = d_state, aes(x = month_date,
             theme(axis.text.x = element_text(angle = 90, vjust=0.5), 
                   legend.position = "bottom") +
             labs(title = "PUA Eligible Applicants",
-                 subtitle = "Selected States, March - October 2020",
+                 subtitle = "Selected States, March 2020 - January 2021",
                   caption = "Data Source: ETA 902P") +
              scale_color_discrete(name = "Claimant Type", 
                                  labels=c("self-employed", "all")) +
@@ -285,6 +286,6 @@ knitr::include_graphics(load_path)
 
 ### PUA Overpayment
 
-A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. Although some State UI laws let the State UI agency waive any overpayment obligation [@DOL2019, tbl. 6-1], that agency can't waive any overpayment under these federal regulations. [20 C.F.R. § 625.14(e)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). However, when Congress extend PUA coverage to March 2021, it also authorized States to waive any PUA overpayment obligation if the State finds that the individual receiving the overpayment was "without fault" and repayment "would be contrary to equity and good conscience." Continued Assistance for
-Unemployed Workers Act of 2020, Pub. L. No. 116-260, $\S$ 201(d), [H.R. 133](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf), p. 771. 
+A PUA recipient who was overpaid may be liable for the excess payment even if they didn't know they were overpaid and even if the State UI agency made the mistake.  That's because in the CARES Act, Congress provided that the regulations that apply to federal disaster unemployment assistance, [20 C.F.R. part 625](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5), apply to PUA benefits, unless the CARES Act section on PUA provides otherwise or "to the extent" that section conflicts with those regulations. CARES Act § 2102(h). In turn, those regulations provide that where a State UI agency finds that someone has received a disaster unemployment benefit payment that they weren't entitled to get, that individual is "liable to repay" that payment "whether or not the payment was due to the individual's fault or misrepresentation." [20 C.F.R. § 625.14(a)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). Moreover, the State UI agency "shall take all reasonable measures" to recover the overpayment. Id. Although some State UI laws let the State UI agency waive any overpayment obligation [@DOL2019, tbl. 6-1], that agency can't waive any overpayment under these federal regulations. [20 C.F.R. § 625.14(e)](https://www.ecfr.gov/cgi-bin/text-idx?SID=204102e6de273aab14c7dcde4e574fcf&mc=true&node=pt20.3.625&rgn=div5#se20.3.625_114). 
 
+However, when Congress extended PUA coverage to March 2021, it also authorized States to waive any PUA overpayment obligation if the State finds that the individual receiving the overpayment was "without fault" and repayment "would be contrary to equity and good conscience." Continued Assistance for Unemployed Workers Act of 2020, Pub. L. No. 116-260, $\S$ 201(d), [H.R. 133](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf), p. 771. 
