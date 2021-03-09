@@ -66,9 +66,9 @@ pl_plot
 
 ```
 
-Whatever employer policies provide, some laws guarantee paid time off for certain caregiving responsibilities. These laws tend to fall into two types: (1)  sick day laws, which require employers to provide a relatively limited number of days, usually at full pay, to address illness and other health-related needs; and (2) family and medical leave laws, which let a worker to take a longer period of time off, sometimes at reduced pay or no pay, to address more serious medical conditions (Figure \@ref(fig:statemap)). Both can generally be used for the health needs of the employee or close family members.
+Whatever employer policies provide, some laws guarantee paid time off for certain caregiving responsibilities. These laws tend to fall into two types: (1)  sick day laws, which require employers to provide a relatively limited number of days, usually at full pay, to address illness and other health-related needs; and (2) family and medical leave laws, which let a worker to take a longer period of time off, sometimes at reduced pay or no pay, to address more serious medical conditions (Figure \@ref(fig:statemapfig)). Both can generally be used for the health needs of the employee or close family members.
 
-```{r statemap, echo = FALSE, message = FALSE, warnings = FALSE, fig.cap = "State Paid Leave Laws, 2021"}
+```{r statemap, echo = FALSE, message = FALSE, warnings = FALSE, eval = FALSE}
 
 # Data Sources: 
 #https://www.abetterbalance.org/resources/paid-family-leave-laws-chart/
@@ -106,6 +106,16 @@ statebins(d,
           labs(
 			title = "State Paid Leave Laws, 2021",
 			caption = "Data Source: A Better Balance (2021)")
+
+save_path <- here::here("figures_final")
+ggsave("state_paid_leave_laws.png", path = save_path)
+
+```
+
+```{r statemapfig, echo = FALSE, message = FALSE, warnings = FALSE, fig.cap = "State Paid Leave Laws, 2021"}
+
+load_path <- here::here("figures_final","state_paid_leave_laws.png")
+knitr::include_graphics(load_path)
 
 ```
 
