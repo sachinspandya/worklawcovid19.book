@@ -4,27 +4,29 @@ The COVID-19 virus first appeared in Wuhan, China in December 2019. By March 202
 
 ## Federal Legislation
 
-In response, in March, April, and December 2020 (Figure \@ref(fig:timeline)), the U.S. Congress passed four key pieces of legislation: 
+In response, the U.S. Congress passed five key pieces of legislation: 
 
 - the Families First Coronavirus Response Act, [Pub. L. No. 116-127, 134 Stat. 178 (March 18, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ127/uslm/PLAW-116publ127.xml); 
 - the Coronavirus Aid, Relief, and Economic Security Act” ("CARES Act"), [Pub. L. No. 116-136, 134 Stat. 281 (March 27, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ136/uslm/PLAW-116publ136.xml); and
 - the Paycheck Protection Program and Health Care Enhancement Act, [Pub. L. No. 116-139, 134 Stat. 620 (April 24, 2020)](https://www.govinfo.gov/content/pkg/PLAW-116publ139/html/PLAW-116publ139.htm).
-- Consolidated Appropriations Act, 2021, [Pub. L. No. 116-260](https://www.congress.gov/116/bills/hr133/BILLS-116hr133enr.pdf) (December 27, 2020).
+- Consolidated Appropriations Act, 2021, [Pub. L. No. 116-260](https://www.congress.gov/bill/116th-congress/house-bill/133/text) (December 27, 2020)
+- American Rescue Plan Act of 2021, [Pub. L. No. 117-2](https://www.congress.gov/117/bills/hr1319/BILLS-117hr1319enr.xml) (March 11, 2021)
 
 ```{r timeline, echo=FALSE, fig.cap = "Timeline of Key Legislation"}
 
 library(timevis)
 
 timeline_data <- data.frame(
-  id      = 1:5,
+  id      = 1:6,
   content = c("WHO declares pandemic",
 		      "Families First Act", 
 			  "CARES Act",
 			  "Paycheck Protection Act",
-			  "Consolidated Appropriations Act"
+			  "Consolidated Appropriations Act",
+			  "American Rescue Plan Act"
 			  ),
-  start   = c("2020-03-11","2020-03-18", "2020-03-27", "2020-04-24", "2020-12-27"),
-  end     = c(NA,NA, NA, NA, NA)
+  start   = c("2020-03-11","2020-03-18", "2020-03-27", "2020-04-24", "2020-12-27", "2021-03-11"),
+  end     = c(NA,NA, NA, NA, NA, NA)
 )
 
 timevis(timeline_data)
