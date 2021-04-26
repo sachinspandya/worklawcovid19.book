@@ -16,7 +16,7 @@ always_allow_html: true
 
 # Preface {-}
 
-This book is a first stab at explaining the ways that COVID-19 has thus far affected work law -- mostly in the U.S. with a comparative look at few other countries. The book is a work in progress. Just as the pandemic is ongoing, we are adding and updating contributions to this book as we go as events and information change. To that end, feel free to [email](mailto: worklawcovid@uconn) comments and suggestions -- including what we missed and what we got wrong.
+This book is a first stab at explaining the ways that COVID-19 has thus far affected work law -- mostly in the U.S. with a comparative look at few other countries. The book is a work in progress. To that end, feel free to send us comments and suggestions -- including what we missed and what we got wrong.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This online collection is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
